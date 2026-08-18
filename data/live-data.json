@@ -1,9 +1,9 @@
 {
-  "scrapedAt": "2026-08-17T14:04:22.062Z",
-  "finishedAt": "2026-08-17T14:05:18.417Z",
-  "sourceCount": 18,
-  "successCount": 9,
-  "failCount": 9,
+  "scrapedAt": "2026-08-18T17:28:19.423Z",
+  "finishedAt": "2026-08-18T17:31:04.095Z",
+  "sourceCount": 44,
+  "successCount": 31,
+  "failCount": 13,
   "puppeteerUsed": false,
   "flags": {
     "uk_income_29000_seen": false,
@@ -22,7 +22,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-17T14:04:22.776Z",
+      "fetchedAt": "2026-08-18T17:28:21.841Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -49,7 +49,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-17T14:04:23.910Z",
+      "fetchedAt": "2026-08-18T17:28:23.893Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -78,7 +78,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-17T14:04:25.127Z",
+      "fetchedAt": "2026-08-18T17:28:25.907Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -105,7 +105,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-17T14:04:26.686Z",
+      "fetchedAt": "2026-08-18T17:28:27.072Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -132,7 +132,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-17T14:04:28.162Z",
+      "fetchedAt": "2026-08-18T17:28:28.946Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -159,7 +159,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-17T14:04:29.469Z",
+      "fetchedAt": "2026-08-18T17:28:30.317Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -188,7 +188,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-17T14:04:30.805Z",
+      "fetchedAt": "2026-08-18T17:28:32.088Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -276,7 +276,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-17T14:05:10.175Z",
+      "fetchedAt": "2026-08-18T17:29:13.710Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -300,7 +300,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-17T14:05:12.185Z",
+      "fetchedAt": "2026-08-18T17:29:16.064Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -355,13 +355,21 @@
         "vac",
         "biometric"
       ],
-      "ok": false,
-      "method": null,
-      "fetchedAt": null,
-      "status": 403,
-      "signals": null,
-      "error": "HTTP 403",
-      "textLength": 0
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:29:21.585Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": []
+      },
+      "error": null,
+      "textLength": 34
     },
     {
       "id": "forum_reddit_ukvisa",
@@ -374,9 +382,9 @@
       "ok": false,
       "method": null,
       "fetchedAt": null,
-      "status": 403,
+      "status": null,
       "signals": null,
-      "error": "HTTP 403",
+      "error": "page.waitForTimeout is not a function",
       "textLength": 0
     },
     {
@@ -390,10 +398,615 @@
       "ok": false,
       "method": null,
       "fetchedAt": null,
+      "status": null,
+      "signals": null,
+      "error": "page.waitForTimeout is not a function",
+      "textLength": 0
+    },
+    {
+      "id": "study_applyboard",
+      "name": "ApplyBoard blog",
+      "url": "https://www.applyboard.com/blog",
+      "country": "global",
+      "tags": [
+        "student",
+        "study"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:29:25.418Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": []
+      },
+      "error": null,
+      "textLength": 3553
+    },
+    {
+      "id": "study_studies_overseas",
+      "name": "Studies Overseas",
+      "url": "https://www.studies-overseas.com/",
+      "country": "global",
+      "tags": [
+        "student",
+        "study"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:29:26.791Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": []
+      },
+      "error": null,
+      "textLength": 2074
+    },
+    {
+      "id": "study_educatly",
+      "name": "Educatly",
+      "url": "https://www.educatly.com/",
+      "country": "global",
+      "tags": [
+        "student",
+        "study"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:29:28.911Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": []
+      },
+      "error": null,
+      "textLength": 6343
+    },
+    {
+      "id": "study_adventus",
+      "name": "Adventus",
+      "url": "https://adventus.io/",
+      "country": "global",
+      "tags": [
+        "student",
+        "study"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:29:31.874Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": []
+      },
+      "error": null,
+      "textLength": 16877
+    },
+    {
+      "id": "study_edvoy",
+      "name": "Edvoy",
+      "url": "https://edvoy.com/",
+      "country": "global",
+      "tags": [
+        "student",
+        "study"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:29:34.564Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": []
+      },
+      "error": null,
+      "textLength": 5001
+    },
+    {
+      "id": "study_idp_pakistan",
+      "name": "IDP Pakistan",
+      "url": "https://www.idp.com/pakistan/",
+      "country": "pakistan",
+      "tags": [
+        "student",
+        "study"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:29:35.871Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": [
+          "courses, start your application, upload documents and track your progress - with expert counsellors support every step of the way. Start and track your application with the IDP Live app With the IDP Live app, you can sea"
+        ]
+      },
+      "error": null,
+      "textLength": 8939
+    },
+    {
+      "id": "portal_us",
+      "name": "US visas",
+      "url": "https://travel.state.gov/content/travel/en/us-visas.html",
+      "country": "us",
+      "tags": [
+        "official"
+      ],
+      "ok": false,
+      "method": null,
+      "fetchedAt": null,
       "status": 403,
       "signals": null,
       "error": "HTTP 403",
       "textLength": 0
+    },
+    {
+      "id": "portal_gb",
+      "name": "UK visas immigration",
+      "url": "https://www.gov.uk/browse/visas-immigration",
+      "country": "gb",
+      "tags": [
+        "official"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:29:38.533Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": []
+      },
+      "error": null,
+      "textLength": 4447
+    },
+    {
+      "id": "portal_ca",
+      "name": "Canada IRCC",
+      "url": "https://www.canada.ca/en/services/immigration-citizenship.html",
+      "country": "ca",
+      "tags": [
+        "official"
+      ],
+      "ok": false,
+      "method": null,
+      "fetchedAt": null,
+      "status": null,
+      "signals": null,
+      "error": "read ETIMEDOUT",
+      "textLength": 0
+    },
+    {
+      "id": "portal_au",
+      "name": "Australia Home Affairs",
+      "url": "https://immi.homeaffairs.gov.au/",
+      "country": "au",
+      "tags": [
+        "official"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:29:52.728Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": []
+      },
+      "error": null,
+      "textLength": 1811
+    },
+    {
+      "id": "portal_nz",
+      "name": "Immigration NZ",
+      "url": "https://www.immigration.govt.nz/",
+      "country": "nz",
+      "tags": [
+        "official"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:29:56.319Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": [
+          "ng your application Applying for a visa Documents and proof Hīkina Whakatutuki New Zealand Government / Te Kāwanatanga o Aotearoa Glossary Accessibility Privacy Terms of use Copyright Cookie preferences Crown copyright ©"
+        ]
+      },
+      "error": null,
+      "textLength": 8984
+    },
+    {
+      "id": "portal_de",
+      "name": "Germany AA visas",
+      "url": "https://www.auswaertiges-amt.de/en/visa-service",
+      "country": "de",
+      "tags": [
+        "official"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:29:58.127Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": []
+      },
+      "error": null,
+      "textLength": 1812
+    },
+    {
+      "id": "portal_fr",
+      "name": "France-Visas",
+      "url": "https://france-visas.gouv.fr/",
+      "country": "fr",
+      "tags": [
+        "official"
+      ],
+      "ok": false,
+      "method": null,
+      "fetchedAt": null,
+      "status": null,
+      "signals": null,
+      "error": "page.waitForTimeout is not a function",
+      "textLength": 0
+    },
+    {
+      "id": "portal_eu_visa",
+      "name": "EU Schengen visa policy",
+      "url": "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy_en",
+      "country": "eu",
+      "tags": [
+        "official",
+        "schengen"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:30:03.885Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": true,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": [
+          "s on the platform, except for providing biometrics (when required) a digital visa will replace the visa sticker. Which countries' nationals need a visa to enter the Schengen area? Applying for a Schengen visa Legal docum",
+          "stem (EES) See all Travel and residence documents Visa Information System (VIS) Key documents and legislation on VIS See all Visa policy Applying for a Schengen visa Legal documents related to Schengen visas Short-stay v"
+        ]
+      },
+      "error": null,
+      "textLength": 27825
+    },
+    {
+      "id": "portal_jp",
+      "name": "Japan MOFA visa",
+      "url": "https://www.mofa.go.jp/j_info/visit/visa/",
+      "country": "jp",
+      "tags": [
+        "official"
+      ],
+      "ok": false,
+      "method": null,
+      "fetchedAt": null,
+      "status": null,
+      "signals": null,
+      "error": "page.waitForTimeout is not a function",
+      "textLength": 0
+    },
+    {
+      "id": "portal_kr",
+      "name": "Korea visa",
+      "url": "https://www.visa.go.kr/",
+      "country": "kr",
+      "tags": [
+        "official"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:30:08.090Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": []
+      },
+      "error": null,
+      "textLength": 5162
+    },
+    {
+      "id": "portal_sg",
+      "name": "Singapore ICA",
+      "url": "https://www.ica.gov.sg/",
+      "country": "sg",
+      "tags": [
+        "official"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:30:12.019Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": [
+          "ICA) Identity Cards, Passport and other Documents Entering, Transiting and Departing Reside, Study and Work in Singapore e-Services and Forms Check Status / Make Appointment Who We Are Vision, Mission & Values Our Checkp"
+        ]
+      },
+      "error": null,
+      "textLength": 2225
+    },
+    {
+      "id": "portal_ae",
+      "name": "UAE ICA",
+      "url": "https://icp.gov.ae/",
+      "country": "ae",
+      "tags": [
+        "official"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:30:17.435Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": []
+      },
+      "error": null,
+      "textLength": 12013
+    },
+    {
+      "id": "portal_tr",
+      "name": "Turkey e-Visa",
+      "url": "https://www.evisa.gov.tr/",
+      "country": "tr",
+      "tags": [
+        "official"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:30:24.654Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": []
+      },
+      "error": null,
+      "textLength": 0
+    },
+    {
+      "id": "portal_ie",
+      "name": "Ireland Immigration",
+      "url": "https://www.irishimmigration.ie/",
+      "country": "ie",
+      "tags": [
+        "official"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:30:26.330Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": []
+      },
+      "error": null,
+      "textLength": 3230
+    },
+    {
+      "id": "portal_in",
+      "name": "India visa online",
+      "url": "https://indianvisaonline.gov.in/",
+      "country": "in",
+      "tags": [
+        "official"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:30:29.146Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": []
+      },
+      "error": null,
+      "textLength": 3030
+    },
+    {
+      "id": "portal_br",
+      "name": "Brazil MRE",
+      "url": "https://www.gov.br/mre/pt-br",
+      "country": "br",
+      "tags": [
+        "official"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:30:32.106Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": []
+      },
+      "error": null,
+      "textLength": 11451
+    },
+    {
+      "id": "portal_za",
+      "name": "South Africa DHA",
+      "url": "https://www.dha.gov.za/",
+      "country": "za",
+      "tags": [
+        "official"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:30:41.248Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": [
+          "ic Services Birth Certificates Identity Documents Marriages Death Registration Adoption Amendments Travel Documents Parental Consent Affidavit ZA Qualified Imams ABIS APPLY ONLINE - Passport & Smart ID List of DHA office"
+        ]
+      },
+      "error": null,
+      "textLength": 8717
+    },
+    {
+      "id": "portal_ng",
+      "name": "Nigeria Immigration",
+      "url": "https://immigration.gov.ng/",
+      "country": "ng",
+      "tags": [
+        "official"
+      ],
+      "ok": false,
+      "method": null,
+      "fetchedAt": null,
+      "status": null,
+      "signals": null,
+      "error": "page.waitForTimeout is not a function",
+      "textLength": 0
+    },
+    {
+      "id": "portal_ke",
+      "name": "Kenya eTA",
+      "url": "https://www.etakenya.go.ke/",
+      "country": "ke",
+      "tags": [
+        "official"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:31:01.740Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": [
+          "veler&#39;s submitted application here. How to apply Learn about the process and requirements for applying for Kenya&#39;s eTA View details General Information Learn more about eligibility, exemptions and application pro"
+        ]
+      },
+      "error": null,
+      "textLength": 1643
+    },
+    {
+      "id": "study_portals",
+      "name": "Studyportals",
+      "url": "https://studyportals.com/",
+      "country": "global",
+      "tags": [
+        "student",
+        "study"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-18T17:31:03.025Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": []
+      },
+      "error": null,
+      "textLength": 4556
     }
   ],
   "hostingNote": "Run this scraper off shared hosting (VPS/Actions/PC). Upload data/live-data.json to FastComet with the static site."
