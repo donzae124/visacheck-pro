@@ -1,12 +1,12 @@
 /**
- * simple-pk.js – Pakistan origin fixed; limited destinations
- * Visa option values match app.js DB keys exactly.
+ * simple-pk.js – Pakistan fixed origin; limited destinations
+ * Visa values match app.js DB keys. Entry: generateChecklist()
  */
 (function () {
   const DEST_VISAS = {
     uk: [
       ['visit', 'Standard Visitor'],
-      ['business', 'Business Visitor'],
+      ['business', 'Business / Standard Visitor'],
       ['student', 'Student visa'],
       ['spouse', 'Spouse / Partner (Family)'],
       ['work', 'Skilled Worker']
@@ -66,20 +66,26 @@
     return c.value;
   }
 
+  function resolveDbVisa(dbCountry, uiVisa) {
+    var v = uiVisa;
+    if (dbCountry === 'uk' && v === 'business') v = 'visit';
+    if (dbCountry === 'uae' && v === 'visit') v = 'tourist';
+    if (dbCountry === 'uae' && v === 'work') v = 'employment';
+    if (dbCountry === 'usa' && v === 'f1') v = 'student';
+    return v;
+  }
+
   function onCountryChangePK() {
     var c = document.getElementById('country');
     var visa = document.getElementById('visaType');
     var eu = document.getElementById('europeCountryWrap');
     var gu = document.getElementById('gulfCountryWrap');
     if (!c || !visa) return;
-
     if (eu) eu.classList.toggle('hidden', c.value !== 'europe');
     if (gu) gu.classList.toggle('hidden', c.value !== 'gulf');
-
     visa.innerHTML = '<option value="">— Select visa type —</option>';
     visa.disabled = !c.value;
     if (!c.value) return;
-
     (DEST_VISAS[c.value] || []).forEach(function (pair) {
       var opt = document.createElement('option');
       opt.value = pair[0];
@@ -88,82 +94,80 @@
     });
   }
 
-  var _origRender = null;
+  window.onCountryChange = onCountryChangePK;
 
-  function install() {
-    if (!_origRender && typeof window.renderContent === 'function') {
-      _origRender = window.renderContent;
+  window.generateChecklist = function () {
+    var cEl = document.getElementById('country');
+    var vEl = document.getElementById('visaType');
+    if (!cEl || !cEl.value) {
+      alert('Please select a destination.');
+      return;
     }
-    window.renderContent = function () {
-      var cEl = document.getElementById('country');
-      var vEl = document.getElementById('visaType');
-      if (!cEl || !cEl.value) {
-        alert('Please select a destination.');
-        return;
-      }
-      if (!vEl || !vEl.value) {
-        alert('Please select a visa type.');
-        return;
-      }
+    if (!vEl || !vEl.value) {
+      alert('Please select a visa type.');
+      return;
+    }
 
-      var uiCountry = cEl.value;
-      var uiVisa = vEl.value;
-      var dbCountry = resolveDbCountry();
-      var dbVisa = uiVisa;
-      // Remap UI codes that differ from DB
-      if (dbCountry === 'uk' && dbVisa === 'business') dbVisa = 'visit';
-      if (dbCountry === 'uae' && dbVisa === 'visit') dbVisa = 'tourist';
-      if (dbCountry === 'uae' && dbVisa === 'work') dbVisa = 'employment';
-      if (dbCountry === 'uae' && dbVisa === 'family') dbVisa = 'tourist';
+    var uiCountry = cEl.value;
+    var uiVisa = vEl.value;
+    var dbCountry = resolveDbCountry();
+    var dbVisa = resolveDbVisa(dbCountry, uiVisa);
 
-      function ensureOption(select, value) {
-        for (var i = 0; i < select.options.length; i++) {
-          if (select.options[i].value === value) return;
-        }
+    if (typeof DB === 'undefined') {
+      alert('App data not loaded. Re-upload app.js.');
+      return;
+    }
+    if (!DB[dbCountry] || !DB[dbCountry].visas || !DB[dbCountry].visas[dbVisa]) {
+      var avail = (DB[dbCountry] && DB[dbCountry].visas) ? Object.keys(DB[dbCountry].visas).join(', ') : 'country missing';
+      alert('Checklist data not available for ' + dbCountry + ' / ' + dbVisa + '.\nAvailable in app.js: ' + avail);
+      return;
+    }
+
+    // Point selects at DB keys so original renderContent reads them
+    function ensure(select, value) {
+      var found = false;
+      for (var i = 0; i < select.options.length; i++) {
+        if (select.options[i].value === value) { found = true; break; }
+      }
+      if (!found) {
         var o = document.createElement('option');
         o.value = value;
         o.textContent = value;
         select.appendChild(o);
       }
+      select.value = value;
+    }
 
-      ensureOption(cEl, dbCountry);
-      cEl.value = dbCountry;
-      ensureOption(vEl, dbVisa);
-      vEl.value = dbVisa;
+    ensure(cEl, dbCountry);
+    ensure(vEl, dbVisa);
 
-      if (typeof DB !== 'undefined') {
-        var keys = (DB[dbCountry] && DB[dbCountry].visas) ? Object.keys(DB[dbCountry].visas) : [];
-        if (!DB[dbCountry] || !DB[dbCountry].visas || !DB[dbCountry].visas[dbVisa]) {
-          alert('Checklist data not available for ' + dbCountry + ' / ' + dbVisa + '.\nAvailable: ' + keys.join(', '));
-          cEl.value = uiCountry;
-          onCountryChangePK();
-          vEl.value = uiVisa;
-          return;
-        }
+    try {
+      if (typeof window.__coreRenderContent === 'function') {
+        window.__coreRenderContent();
+      } else if (typeof renderContent === 'function') {
+        // unwrap if we previously wrapped
+        renderContent();
       }
+    } finally {
+      cEl.value = uiCountry;
+      onCountryChangePK();
+      vEl.value = uiVisa;
+    }
+  };
 
-      try {
-        if (typeof _origRender === 'function') _origRender();
-        else alert('app.js not loaded correctly.');
-      } finally {
-        cEl.value = uiCountry;
-        onCountryChangePK();
-        vEl.value = uiVisa;
-      }
-    };
-    window.onCountryChange = onCountryChangePK;
-  }
+  // Capture core renderContent once app.js has defined it
+  document.addEventListener('DOMContentLoaded', function () {
+    if (typeof window.renderContent === 'function' && !window.__coreRenderContent) {
+      window.__coreRenderContent = window.renderContent;
+    }
+    // Always use generateChecklist for the main button path
+    window.renderContent = window.generateChecklist;
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function () {
-      install();
-      var c = document.getElementById('country');
-      if (c) {
-        c.removeAttribute('onchange');
-        c.addEventListener('change', onCountryChangePK);
-      }
-    });
-  } else {
-    install();
-  }
+    var c = document.getElementById('country');
+    if (c) {
+      c.removeAttribute('onchange');
+      c.addEventListener('change', onCountryChangePK);
+    }
+    console.log('simple-pk ready. USA student present:', !!(window.DB && DB.usa && DB.usa.visas && DB.usa.visas.student));
+  });
 })();

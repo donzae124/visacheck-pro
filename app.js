@@ -198,15 +198,67 @@ const DB = {
       },
       student: {
         title: "F-1 Student Visa",
-        summary: { threshold: "SEVIS + funds", english: "Required", grant: "Duration of status", vac: "US Embassy/Consulate" },
+        summary: { threshold: "I-20 funds (tuition + living)", english: "School / interview", grant: "D/S (duration of status)", vac: "US Embassy Islamabad or Consulate Karachi" },
         docs: {
-          "Academic": ["I-20 from SEVP school","Academic transcripts & degrees","English test scores"],
-          "Financial": ["Proof of funds for first year","Sponsor affidavit if applicable"],
-          "Identity": ["Passport","DS-160","Photo","SEVIS fee receipt"]
+          "Identity & application": [
+            "Valid Pakistani passport (valid at least 6 months beyond intended entry where required by practice)",
+            "DS-160 confirmation page (barcode)",
+            "Visa application (MRV) fee payment receipt",
+            "One photograph meeting US visa photo rules if not uploaded successfully in DS-160",
+            "Appointment confirmation for consular interview"
+          ],
+          "SEVIS & school": [
+            "Original Form I-20 issued by SEVP-certified school (signed by DSO and student)",
+            "SEVIS I-901 fee payment confirmation",
+            "Admission / offer letter from the US school (if held separately from I-20)"
+          ],
+          "Academic (Pakistan / prior study)": [
+            "Degree certificates and transcripts used for admission",
+            "Intermediate / bachelor / master mark sheets as applicable",
+            "English test score reports if required by the school (TOEFL, IELTS, Duolingo, etc.)",
+            "Gap explanation letter if there are study gaps"
+          ],
+          "Financial evidence": [
+            "Proof of liquid funds covering at least the first academic year of tuition and living costs as shown on the I-20",
+            "Bank statements (student and/or sponsor) – typically recent months, consistent balances",
+            "Sponsor affidavit of support if a parent/relative funds the study",
+            "Sponsor relationship proof (FRC / NADRA / birth certificate as applicable)",
+            "Sponsor income evidence (salary slips, tax returns, business registration) where available",
+            "Education loan sanction letter if using a loan"
+          ],
+          "Ties & intent (interview)": [
+            "Evidence of ties to Pakistan (family, property, job offer after graduation, business)",
+            "Clear study plan: why this programme, why this school, how it fits career in Pakistan",
+            "Previous US/Schengen/UK visas and travel history if any"
+          ]
         },
-        financial: { title: "Funds", main: "Cover tuition + living for at least first academic year", note: "", savings: "", methods: [] },
-        process: { steps: ["Get I-20","Pay SEVIS","DS-160 + MRV","Interview"], fees: "SEVIS + MRV" },
-        research: ["travel.state.gov"]
+        financial: {
+          title: "F-1 financial requirement",
+          main: "You must show ability to pay tuition and living costs for at least the first year as stated on the I-20, without unlawful employment.",
+          note: "The US does not publish one fixed bank-balance figure for all F-1 cases. The amount must match the I-20 estimate. Officers assess source and availability of funds and nonimmigrant intent under INA 214(b).",
+          savings: "",
+          methods: [
+            { name: "Own funds", desc: "Student bank statements showing available liquid funds; explain large recent deposits." },
+            { name: "Family sponsor", desc: "Sponsor affidavit + bank statements + proof of relationship + income/wealth evidence." },
+            { name: "Loan", desc: "Formal loan approval/sanction letter from a recognised lender covering the required amount." }
+          ]
+        },
+        process: {
+          steps: [
+            "Receive I-20 from the US school and verify name/spelling matches passport",
+            "Pay SEVIS I-901 fee and print receipt",
+            "Complete DS-160 online and print confirmation",
+            "Pay MRV fee and book interview at US Embassy Islamabad or Consulate Karachi (as applicable)",
+            "Attend interview with I-20, SEVIS receipt, financial documents and academic records",
+            "If approved, await passport return with F-1 visa; check entry validation on arrival"
+          ],
+          fees: "SEVIS I-901 + MRV fee (see travel.state.gov / ustraveldocs for current amounts)"
+        },
+        research: [
+          "Official: https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+          "SEVIS fee: https://www.fmjfee.com/",
+          "Pakistan appointments: https://www.ustraveldocs.com/pk/"
+        ]
       },
       work: {
         title: "Work Visa (H-1B / L-1 / Other)",
@@ -720,41 +772,25 @@ function renderContent() {
     finHtml += `</div>`;
   }
 
-  // Merge Finance Deep Dive
-  if (typeof FINANCE_DEEP !== 'undefined') {
+  // Destination + visa specific financial tab only (no cross-route leakage)
+  // Optional extra principles only when they match this country/visa
+  if (typeof FINANCE_DEEP !== 'undefined' && country === 'uk' && (isSpouse || isStudent)) {
     finHtml += `<div class="mt-6 border-t border-slate-200 pt-4">
-      <h3 class="font-semibold text-rose-800 mb-2">Finance Deep Dive – Core Principles</h3>
+      <h3 class="font-semibold text-rose-800 mb-2">Additional UK guidance</h3>
       <ul class="space-y-1 text-sm mb-4">`;
-    FINANCE_DEEP.principles.forEach(p => { finHtml += `<li class="flex gap-2"><span class="text-rose-500">•</span> ${p}</li>`; });
-    finHtml += `</ul>
-      <h3 class="font-semibold text-rose-800 mb-2">Route-Specific Guidance</h3>`;
-    // Pick most relevant route text
-    const routeHints = [];
-    if (isSpouse || country === 'uk') routeHints.push(['UK Family (Spouse)', FINANCE_DEEP.byRoute['UK Family (Spouse)']]);
-    if (isStudent) {
-      routeHints.push(['UK Student / Student routes', FINANCE_DEEP.byRoute['UK Student']]);
-      routeHints.push(['Canada / Australia student-style', FINANCE_DEEP.byRoute['Canada'] + ' ' + FINANCE_DEEP.byRoute['Australia']]);
-    }
-    if (isVisitor || country === 'spain' || country === 'germany' || country === 'schengen') {
-      routeHints.push(['Schengen Short Stay', FINANCE_DEEP.byRoute['Schengen Short Stay']]);
-    }
-    if (country === 'usa') routeHints.push(['USA B1/B2 & F-1', FINANCE_DEEP.byRoute['USA B1/B2 & F-1']]);
-    if (country === 'canada') routeHints.push(['Canada', FINANCE_DEEP.byRoute['Canada']]);
-    if (country === 'australia') routeHints.push(['Australia', FINANCE_DEEP.byRoute['Australia']]);
-    if (country === 'uae' || country === 'saudi' || country === 'qatar') routeHints.push(['Gulf Work', FINANCE_DEEP.byRoute['Gulf Work']]);
-    if (!routeHints.length) {
-      Object.entries(FINANCE_DEEP.byRoute).slice(0, 3).forEach(([k, v]) => routeHints.push([k, v]));
-    }
-    routeHints.forEach(([k, v]) => {
-      finHtml += `<div class="border border-slate-200 rounded-lg p-3 mb-2"><div class="font-medium text-sm text-rose-700">${k}</div><p class="text-sm text-slate-600 mt-1">${v}</p></div>`;
+    (FINANCE_DEEP.principles || []).slice(0, 4).forEach(p => {
+      finHtml += `<li class="flex gap-2"><span class="text-rose-500">•</span> ${p}</li>`;
     });
-    finHtml += `<h3 class="font-semibold text-rose-800 mt-4 mb-2">Typical Financial Documents Checklist</h3><ul class="space-y-1 text-sm">`;
-    FINANCE_DEEP.documents.forEach(d => {
-      finHtml += `<label class="check-item flex items-start gap-2.5 px-2 py-1.5 rounded cursor-pointer text-sm"><input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-slate-300 text-primary-600"><span>${d}</span></label>`;
-    });
-    finHtml += `</ul></div>`;
+    finHtml += `</ul>`;
+    if (isSpouse && FINANCE_DEEP.byRoute && FINANCE_DEEP.byRoute['UK Family (Spouse)']) {
+      finHtml += `<p class="text-sm text-slate-700 mb-2"><strong>UK Family (Spouse):</strong> ${FINANCE_DEEP.byRoute['UK Family (Spouse)']}</p>`;
+    }
+    if (isStudent && FINANCE_DEEP.byRoute && FINANCE_DEEP.byRoute['UK Student']) {
+      finHtml += `<p class="text-sm text-slate-700 mb-2"><strong>UK Student:</strong> ${FINANCE_DEEP.byRoute['UK Student']}</p>`;
+    }
+    finHtml += `</div>`;
   }
-  finHtml += `</div>`;
+
   document.getElementById('panel-financial').innerHTML = finHtml;
 
   /* ===== PROCESS TAB ===== */

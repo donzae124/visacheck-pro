@@ -127,7 +127,7 @@
     </div>
 
     <div class="mt-4 flex flex-wrap gap-2">
-      <button onclick="renderContent()" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold px-5 py-2 rounded-lg text-sm transition shadow-sm">Generate Full Checklist (Merged Research)</button>
+      <button onclick="generateChecklist()" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold px-5 py-2 rounded-lg text-sm transition shadow-sm">Generate Full Checklist (Merged Research)</button>
       <button onclick="showVisaFree()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-5 py-2 rounded-lg text-sm transition shadow-sm">Visa-Free / VOA / E-Visa</button>
       <button onclick="showSpecial('waiver')" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-lg text-sm transition shadow-sm">Visa Waiver</button>
       <button onclick="showSpecial('diplomatic')" class="bg-slate-700 hover:bg-slate-800 text-white font-semibold px-4 py-2 rounded-lg text-sm transition shadow-sm">Diplomatic Passport</button>
@@ -136,7 +136,7 @@
       <button onclick="showSpecial('finance')" class="bg-rose-600 hover:bg-rose-700 text-white font-semibold px-4 py-2 rounded-lg text-sm transition shadow-sm">Finance Deep Dive</button>
       <button onclick="resetAll()" class="border border-slate-200 hover:bg-slate-50 text-slate-600 font-medium px-4 py-2 rounded-lg text-sm transition">Reset</button>
     </div>
-    <p class="mt-3 text-xs text-slate-500">Generate merges <strong>Who Can Sponsor</strong>, <strong>Finance Deep Dive</strong>, and <strong>Foreign Education</strong> (for student routes) into the checklist. Snapshot: 17 Aug 2026. Daily live updates require a backend crawler.</p>
+    <p class="mt-3 text-xs text-slate-500">Checklists are specific to the selected destination and visa type (Pakistan origin). Live research loads from GitHub when available.</p>
     <div id="liveBanner" class="mt-3 text-xs bg-slate-100 text-slate-700 px-3 py-2 rounded-lg border border-slate-200">Checking live research data…</div>
     <div class="mt-2 no-print">
       <button type="button" id="btnRefreshLive" onclick="refreshLiveResearch()" class="text-xs border border-slate-200 bg-white hover:bg-slate-50 px-3 py-1.5 rounded-lg">Refresh live data</button>
