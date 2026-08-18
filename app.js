@@ -1073,7 +1073,7 @@ window.LIVE_DATA = null;
 window.LIVE_STATUS = { loaded: false, scrapedAt: null, success: 0, fail: 0, flags: {} };
 
 function loadLiveData() {
-  return fetch('data/live-data.json?ts=' + Date.now())
+  return fetch('https://raw.githubusercontent.com/donzae124/visacheck-pro/main/data/live-data.json?ts=' + Date.now()).catch(function(){return fetch('data/live-data.json?ts=' + Date.now());})
     .then(function(r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();

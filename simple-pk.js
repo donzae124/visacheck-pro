@@ -1,6 +1,6 @@
 /**
- * simple-pk.js – Pakistan origin fixed; limited destinations only
- * Loaded after app.js. Uses existing DB + visaOptions from app.js / extra-data.js
+ * simple-pk.js – Pakistan origin fixed; limited destinations
+ * Visa option values match app.js DB keys exactly.
  */
 (function () {
   const DEST_VISAS = {
@@ -13,14 +13,13 @@
     ],
     usa: [
       ['b1b2', 'B-1/B-2 Visitor'],
-      ['f1', 'F-1 Student'],
-      ['work', 'Work (H-1B / other – check category)']
+      ['student', 'F-1 Student'],
+      ['work', 'Work (H-1B / L-1 etc.)']
     ],
     canada: [
       ['visitor', 'Visitor (TRV)'],
       ['student', 'Study permit'],
-      ['work', 'Work permit'],
-      ['family', 'Family sponsorship']
+      ['spouse', 'Spouse sponsorship']
     ],
     australia: [
       ['visitor', 'Visitor (600)'],
@@ -30,7 +29,7 @@
     europe: [
       ['tourist', 'Schengen Tourist (Type C)'],
       ['business', 'Schengen Business (Type C)'],
-      ['student', 'National Student (Type D)']
+      ['student', 'Student / National']
     ],
     china: [
       ['tourist', 'Tourist (L)'],
@@ -38,24 +37,22 @@
       ['student', 'Student (X)']
     ],
     gulf: [
-      ['visit', 'Visit / Tourist'],
-      ['work', 'Employment'],
-      ['family', 'Family residency']
+      ['tourist', 'Tourist / Visit'],
+      ['employment', 'Employment / Work'],
+      ['transit', 'Transit']
     ],
     saudi: [
       ['visit', 'Visit / Tourist'],
-      ['work', 'Work / Iqama route'],
-      ['family', 'Family']
+      ['work', 'Work / Employment'],
+      ['umrah', 'Umrah']
     ],
     malaysia: [
-      ['tourist', 'Tourist / Social'],
-      ['student', 'Student'],
-      ['work', 'Employment']
+      ['tourist', 'Tourist / Social Visit'],
+      ['student', 'Student']
     ]
   };
 
-  // Map UI destination to DB keys used in app.js
-  function resolveDbKey() {
+  function resolveDbCountry() {
     var c = document.getElementById('country');
     if (!c || !c.value) return null;
     if (c.value === 'europe') {
@@ -66,7 +63,7 @@
       var g = document.getElementById('gulfCountry');
       return (g && g.value) || 'uae';
     }
-    return c.value; // uk, usa, canada, australia, china, saudi, malaysia
+    return c.value;
   }
 
   function onCountryChangePK() {
@@ -83,8 +80,7 @@
     visa.disabled = !c.value;
     if (!c.value) return;
 
-    var list = DEST_VISAS[c.value] || [];
-    list.forEach(function (pair) {
+    (DEST_VISAS[c.value] || []).forEach(function (pair) {
       var opt = document.createElement('option');
       opt.value = pair[0];
       opt.textContent = pair[1];
@@ -92,91 +88,82 @@
     });
   }
 
-  // Wrap original renderContent to use resolved Europe/Gulf country key
-  var _origRender = window.renderContent;
-  window.renderContent = function () {
-    var c = document.getElementById('country');
-    if (!c || !c.value) {
-      alert('Please select a destination.');
-      return;
-    }
-    var visa = document.getElementById('visaType');
-    if (!visa || !visa.value) {
-      alert('Please select a visa type.');
-      return;
-    }
+  var _origRender = null;
 
-    // Temporarily set #country value to concrete DB key for legacy renderContent
-    var uiVal = c.value;
-    var dbKey = resolveDbKey();
-    var visaVal = visa.value;
-
-    // Map visa codes to DB keys where needed
-    var visaMap = {
-      visit: 'visit',
-      visitor: 'visitor',
-      business: 'business',
-      student: 'student',
-      spouse: 'spouse',
-      family: 'family',
-      work: 'work',
-      tourist: 'tourist',
-      b1b2: 'b1b2',
-      f1: 'f1'
-    };
-
-    // Point country select to concrete key so old DB[country] lookup works
-    var hadOption = false;
-    for (var i = 0; i < c.options.length; i++) {
-      if (c.options[i].value === dbKey) { hadOption = true; break; }
+  function install() {
+    if (!_origRender && typeof window.renderContent === 'function') {
+      _origRender = window.renderContent;
     }
-    if (!hadOption) {
-      var o = document.createElement('option');
-      o.value = dbKey;
-      o.textContent = dbKey;
-      c.appendChild(o);
-    }
-    c.value = dbKey;
-
-    // Ensure visa option exists for DB
-    var vHad = false;
-    for (var j = 0; j < visa.options.length; j++) {
-      if (visa.options[j].value === visaVal) { vHad = true; break; }
-    }
-    if (!vHad) {
-      var vo = document.createElement('option');
-      vo.value = visaVal;
-      vo.textContent = visaVal;
-      visa.appendChild(vo);
-      visa.value = visaVal;
-    }
-
-    try {
-      if (typeof _origRender === 'function') {
-        _origRender();
-      } else {
-        alert('Core app.js renderContent not found.');
+    window.renderContent = function () {
+      var cEl = document.getElementById('country');
+      var vEl = document.getElementById('visaType');
+      if (!cEl || !cEl.value) {
+        alert('Please select a destination.');
+        return;
       }
-    } finally {
-      // restore UI selection
-      c.value = uiVal;
-      onCountryChangePK();
-      visa.value = visaVal;
-    }
-  };
+      if (!vEl || !vEl.value) {
+        alert('Please select a visa type.');
+        return;
+      }
 
-  window.onCountryChange = onCountryChangePK;
+      var uiCountry = cEl.value;
+      var uiVisa = vEl.value;
+      var dbCountry = resolveDbCountry();
+      var dbVisa = uiVisa;
+      // Remap UI codes that differ from DB
+      if (dbCountry === 'uk' && dbVisa === 'business') dbVisa = 'visit';
+      if (dbCountry === 'uae' && dbVisa === 'visit') dbVisa = 'tourist';
+      if (dbCountry === 'uae' && dbVisa === 'work') dbVisa = 'employment';
+      if (dbCountry === 'uae' && dbVisa === 'family') dbVisa = 'tourist';
 
-  document.addEventListener('DOMContentLoaded', function () {
-    var c = document.getElementById('country');
-    if (c) {
-      c.removeAttribute('onchange');
-      c.addEventListener('change', onCountryChangePK);
-    }
-    var e = document.getElementById('europeCountry');
-    var g = document.getElementById('gulfCountry');
-    if (e) e.addEventListener('change', function () {});
-    if (g) g.addEventListener('change', function () {});
-    console.log('VisaCheck Pro – Pakistan origin, limited destinations');
-  });
+      function ensureOption(select, value) {
+        for (var i = 0; i < select.options.length; i++) {
+          if (select.options[i].value === value) return;
+        }
+        var o = document.createElement('option');
+        o.value = value;
+        o.textContent = value;
+        select.appendChild(o);
+      }
+
+      ensureOption(cEl, dbCountry);
+      cEl.value = dbCountry;
+      ensureOption(vEl, dbVisa);
+      vEl.value = dbVisa;
+
+      if (typeof DB !== 'undefined') {
+        var keys = (DB[dbCountry] && DB[dbCountry].visas) ? Object.keys(DB[dbCountry].visas) : [];
+        if (!DB[dbCountry] || !DB[dbCountry].visas || !DB[dbCountry].visas[dbVisa]) {
+          alert('Checklist data not available for ' + dbCountry + ' / ' + dbVisa + '.\nAvailable: ' + keys.join(', '));
+          cEl.value = uiCountry;
+          onCountryChangePK();
+          vEl.value = uiVisa;
+          return;
+        }
+      }
+
+      try {
+        if (typeof _origRender === 'function') _origRender();
+        else alert('app.js not loaded correctly.');
+      } finally {
+        cEl.value = uiCountry;
+        onCountryChangePK();
+        vEl.value = uiVisa;
+      }
+    };
+    window.onCountryChange = onCountryChangePK;
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      install();
+      var c = document.getElementById('country');
+      if (c) {
+        c.removeAttribute('onchange');
+        c.addEventListener('change', onCountryChangePK);
+      }
+    });
+  } else {
+    install();
+  }
 })();
