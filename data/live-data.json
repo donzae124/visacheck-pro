@@ -1,0 +1,400 @@
+{
+  "scrapedAt": "2026-08-17T14:04:22.062Z",
+  "finishedAt": "2026-08-17T14:05:18.417Z",
+  "sourceCount": 18,
+  "successCount": 9,
+  "failCount": 9,
+  "puppeteerUsed": false,
+  "flags": {
+    "uk_income_29000_seen": false,
+    "uk_financial_requirement_seen": true,
+    "tb_guidance_seen": true
+  },
+  "sources": [
+    {
+      "id": "uk_family",
+      "name": "UK Family partner/spouse",
+      "url": "https://www.gov.uk/uk-family-visa/partner-spouse",
+      "country": "uk",
+      "tags": [
+        "spouse",
+        "financial"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-17T14:04:22.776Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": true,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": [
+          "s Overview Apply as a partner or spouse Financial requirements if you’re applying as a partner or spouse Apply as a parent Apply as a child Apply as an adult coming to be cared for by a relative Apply on the basis of you",
+          "ay will end at the same time as theirs. How to apply You’ll need to prepare information and evidence to provide with your application. How you apply depends on whether you’re in the UK or not. Outside the UK You must app"
+        ]
+      },
+      "error": null,
+      "textLength": 11123
+    },
+    {
+      "id": "uk_student",
+      "name": "UK Student visa",
+      "url": "https://www.gov.uk/student-visa",
+      "country": "uk",
+      "tags": [
+        "student"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-17T14:04:23.910Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": true,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [
+          "£558"
+        ],
+        "snippets": [
+          "he English language Check if you need a tuberculosis (TB) test If you&#39;re doing a masters degree or above, you may need to apply for the Academic Technology Approval Scheme (ATAS) certificate. Check if you need to app",
+          "rse Money you need Knowledge of English Documents you'll need to apply Apply online Your partner and children Extend your visa Switch to this visa Overview You can apply for a Student visa to study in the UK if you’re 16"
+        ]
+      },
+      "error": null,
+      "textLength": 9206
+    },
+    {
+      "id": "uk_visitor",
+      "name": "UK Standard Visitor",
+      "url": "https://www.gov.uk/standard-visitor",
+      "country": "uk",
+      "tags": [
+        "visit"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-17T14:04:25.127Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [
+          "£135",
+          "£74.50"
+        ],
+        "snippets": []
+      },
+      "error": null,
+      "textLength": 7502
+    },
+    {
+      "id": "uk_tb_pakistan",
+      "name": "UK TB clinics Pakistan",
+      "url": "https://www.gov.uk/government/publications/tuberculosis-test-for-a-uk-visa-clinics-in-pakistan",
+      "country": "uk",
+      "tags": [
+        "tb"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-17T14:04:26.686Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": true,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": [
+          "Pakistan: tuberculosis test clinics for a UK visa - GOV.UK Cookies on GOV.UK We use some essential cookies to make this website work. We’d like to set additional cookies to understand how yo",
+          "all updates Get emails about this page Documents Tuberculosis testing in Pakistan HTML Details You’ll need to have a tuberculosis ( TB ) test if you’re coming to the UK for 6 months or more and both of the following app"
+        ]
+      },
+      "error": null,
+      "textLength": 5314
+    },
+    {
+      "id": "uk_fees",
+      "name": "UK visa fees",
+      "url": "https://www.gov.uk/visa-fees",
+      "country": "uk",
+      "tags": [
+        "fees"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-17T14:04:28.162Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": [
+          "ted content Check if you need a UK visa How to apply for a visa to come to the UK Find a visa application centre Explore the topic Travelling to the UK What you need to do Is this page useful? Maybe Yes this page is usef"
+        ]
+      },
+      "error": null,
+      "textLength": 3301
+    },
+    {
+      "id": "uk_fm_se",
+      "name": "UK Appendix FM-SE guidance hub",
+      "url": "https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-fm-se-family-members-specified-evidence",
+      "country": "uk",
+      "tags": [
+        "financial",
+        "spouse"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-17T14:04:29.469Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": true,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [
+          "£79,000"
+        ],
+        "snippets": [
+          "ction to such a department. Evidence of Financial Requirements under Appendix FM A1. To meet the financial requirement under paragraphs E-ECP.3.1., E-LTRP.3.1., E-LTRP.3.7., E-ECC.2.1., E-ECC.2.5., E-LTRC.2.1. and E-LTRC",
+          "ich this Appendix states that specified documents must be provided, the Entry Clearance Officer or Secretary of State (“the decision-maker”) will consider documents that have been submitted with the application, and will"
+        ]
+      },
+      "error": null,
+      "textLength": 82270
+    },
+    {
+      "id": "spain_vac",
+      "name": "Spain visa Pakistan portal",
+      "url": "https://www.thespainvisa.com/",
+      "country": "spain",
+      "tags": [
+        "schengen"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-17T14:04:30.805Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": []
+      },
+      "error": null,
+      "textLength": 839
+    },
+    {
+      "id": "spain_appointment",
+      "name": "Spain appointment portal",
+      "url": "https://appointment.thespainvisa.com/",
+      "country": "spain",
+      "tags": [
+        "appointment"
+      ],
+      "ok": false,
+      "method": null,
+      "fetchedAt": null,
+      "status": 403,
+      "signals": null,
+      "error": "HTTP 403",
+      "textLength": 0
+    },
+    {
+      "id": "canada_visit",
+      "name": "Canada visit",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html",
+      "country": "canada",
+      "tags": [
+        "visit"
+      ],
+      "ok": false,
+      "method": null,
+      "fetchedAt": null,
+      "status": null,
+      "signals": null,
+      "error": "read ETIMEDOUT",
+      "textLength": 0
+    },
+    {
+      "id": "canada_study",
+      "name": "Canada study",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html",
+      "country": "canada",
+      "tags": [
+        "student"
+      ],
+      "ok": false,
+      "method": null,
+      "fetchedAt": null,
+      "status": null,
+      "signals": null,
+      "error": "read ETIMEDOUT",
+      "textLength": 0
+    },
+    {
+      "id": "canada_family",
+      "name": "Canada family sponsorship",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship.html",
+      "country": "canada",
+      "tags": [
+        "spouse"
+      ],
+      "ok": false,
+      "method": null,
+      "fetchedAt": null,
+      "status": null,
+      "signals": null,
+      "error": "read ETIMEDOUT",
+      "textLength": 0
+    },
+    {
+      "id": "australia_visitor",
+      "name": "Australia visitor 600",
+      "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600",
+      "country": "australia",
+      "tags": [
+        "visit"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-17T14:05:10.175Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": []
+      },
+      "error": null,
+      "textLength": 1608
+    },
+    {
+      "id": "australia_student",
+      "name": "Australia student 500",
+      "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "country": "australia",
+      "tags": [
+        "student"
+      ],
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-17T14:05:12.185Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": false,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": []
+      },
+      "error": null,
+      "textLength": 3774
+    },
+    {
+      "id": "usa_visitor",
+      "name": "US B1/B2 visitor",
+      "url": "https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visitor.html",
+      "country": "usa",
+      "tags": [
+        "visit"
+      ],
+      "ok": false,
+      "method": null,
+      "fetchedAt": null,
+      "status": 403,
+      "signals": null,
+      "error": "HTTP 403",
+      "textLength": 0
+    },
+    {
+      "id": "usa_student",
+      "name": "US F-1 student",
+      "url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+      "country": "usa",
+      "tags": [
+        "student"
+      ],
+      "ok": false,
+      "method": null,
+      "fetchedAt": null,
+      "status": 403,
+      "signals": null,
+      "error": "HTTP 403",
+      "textLength": 0
+    },
+    {
+      "id": "vfs_pakistan_uk",
+      "name": "VFS Global Pakistan UK",
+      "url": "https://visa.vfsglobal.com/pak/en/gbr/",
+      "country": "uk",
+      "tags": [
+        "vac",
+        "biometric"
+      ],
+      "ok": false,
+      "method": null,
+      "fetchedAt": null,
+      "status": 403,
+      "signals": null,
+      "error": "HTTP 403",
+      "textLength": 0
+    },
+    {
+      "id": "forum_reddit_ukvisa",
+      "name": "Reddit r/ukvisa (community signal)",
+      "url": "https://www.reddit.com/r/ukvisa/.json?limit=15",
+      "country": "uk",
+      "tags": [
+        "forum"
+      ],
+      "ok": false,
+      "method": null,
+      "fetchedAt": null,
+      "status": 403,
+      "signals": null,
+      "error": "HTTP 403",
+      "textLength": 0
+    },
+    {
+      "id": "forum_reddit_schengen",
+      "name": "Reddit r/SchengenVisa",
+      "url": "https://www.reddit.com/r/SchengenVisa/.json?limit=10",
+      "country": "schengen",
+      "tags": [
+        "forum"
+      ],
+      "ok": false,
+      "method": null,
+      "fetchedAt": null,
+      "status": 403,
+      "signals": null,
+      "error": "HTTP 403",
+      "textLength": 0
+    }
+  ],
+  "hostingNote": "Run this scraper off shared hosting (VPS/Actions/PC). Upload data/live-data.json to FastComet with the static site."
+}

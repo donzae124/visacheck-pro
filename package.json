@@ -1,0 +1,14 @@
+{
+  "name": "visa-checklist-site",
+  "version": "1.0.0",
+  "description": "VisaCheck Pro \u2013 Pakistan origin visa checklists with daily scrape support",
+  "main": "app.js",
+  "scripts": {
+    "scrape": "node scripts/scrape-daily.js",
+    "scrape:daily": "node scripts/scrape-daily.js"
+  },
+  "dependencies": {
+    "puppeteer": "^22.15.0"
+  },
+  "license": "ISC"
+}

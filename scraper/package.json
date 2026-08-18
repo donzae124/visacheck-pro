@@ -1,0 +1,13 @@
+{
+  "name": "visacheck-scraper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local Mac Puppeteer scraper for VisaCheck Pro → SQL for FastComet MySQL",
+  "main": "scrape-to-sql.js",
+  "scripts": {
+    "scrape": "node scrape-to-sql.js"
+  },
+  "dependencies": {
+    "puppeteer": "^23.0.0"
+  }
+}

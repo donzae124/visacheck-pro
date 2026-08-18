@@ -1,0 +1,35 @@
+[2026-08-17T13:53:04.426Z] Daily scrape started
+OK  uk_family (11123 chars)
+OK  uk_student (9154 chars)
+OK  uk_visitor (7502 chars)
+OK  uk_tb_pakistan (5298 chars)
+OK  uk_fees (3301 chars)
+OK  spain_vac (839 chars)
+OK  canada_ircc (3371 chars)
+OK  canada_study (4058 chars)
+FAIL australia_visitor: HTTP 403 for https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600
+FAIL australia_student: HTTP 403 for https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500
+FAIL usa_visitor: HTTP 403 for https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visitor.html
+FAIL usa_student: HTTP 403 for https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html
+---
+[2026-08-17T14:04:22.062Z] Daily scrape started (HTTP + Puppeteer fallback)
+Puppeteer not installed – HTTP only
+OK  uk_family via http (11123 chars)
+OK  uk_student via http (9206 chars)
+OK  uk_visitor via http (7502 chars)
+OK  uk_tb_pakistan via http (5314 chars)
+OK  uk_fees via http (3301 chars)
+OK  uk_fm_se via http (82270 chars)
+OK  spain_vac via http (839 chars)
+FAIL spain_appointment: HTTP 403
+FAIL canada_visit: read ETIMEDOUT
+FAIL canada_study: read ETIMEDOUT
+FAIL canada_family: read ETIMEDOUT
+OK  australia_visitor via http (1608 chars)
+OK  australia_student via http (3774 chars)
+FAIL usa_visitor: HTTP 403
+FAIL usa_student: HTTP 403
+FAIL vfs_pakistan_uk: HTTP 403
+FAIL forum_reddit_ukvisa: HTTP 403
+FAIL forum_reddit_schengen: HTTP 403
+---
