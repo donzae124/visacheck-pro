@@ -72,6 +72,8 @@
     if (dbCountry === 'uae' && v === 'visit') v = 'tourist';
     if (dbCountry === 'uae' && v === 'work') v = 'employment';
     if (dbCountry === 'usa' && v === 'f1') v = 'student';
+    if ((dbCountry === 'kuwait' || dbCountry === 'bahrain' || dbCountry === 'oman') && v === 'work') v = 'employment';
+    if ((dbCountry === 'kuwait' || dbCountry === 'bahrain' || dbCountry === 'oman') && v === 'visit') v = 'tourist';
     return v;
   }
 

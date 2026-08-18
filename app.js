@@ -9,192 +9,1244 @@ const DB = {
     name: "United Kingdom", flag: "🇬🇧",
     visas: {
       spouse: {
-        title: "Spouse / Partner Visa",
-        summary: { threshold: "£29,000", english: "A1", grant: "33 months", vac: "VFS Global" },
+        title: "Family Visa – Spouse/Partner (Appendix FM, Pakistan → UK)",
+        summary: { threshold: "£29,000 MIR (new applicants from 11 Apr 2024)", english: "A1 CEFR or exemption", grant: "Usually 33 months entry clearance", vac: "VFS Global" },
         docs: {
-          "Identity": ["Applicant’s current Pakistani passport + all previous passports","Photocopies of all passport pages","Sponsor’s British passport (bio-data page)","Applicant’s CNIC copy","NADRA FRC (by birth) and FRC (by marriage)"],
-          "Relationship (Critical)": ["Original Nikah Nama (Union Council) + certified English translation","NADRA Marriage Registration Certificate (MRC) – strongly recommended","Previous marriage documents (divorce/death) + translations if applicable","Wedding & family photos (dated with captions)","Communication records (WhatsApp, calls, emails – samples over time)","Travel/visit evidence (tickets, visas, hotel bookings)","Financial support evidence (money transfers, gifts)","Covering letter explaining relationship history & future plans"],
-          "Financial (Sponsor – Specified Evidence)": ["Employer letter (headed paper) confirming job, salary, start date & ongoing employment","Payslips (usually last 6 months)","Matching personal bank statements showing salary credits","P60(s) and employment contract (recommended)","If using savings: 6 consecutive months bank statements showing required balance"],
-          "Accommodation": ["Tenancy agreement / mortgage / property ownership documents","Landlord letter confirming spouse can live there (if rented)","Evidence accommodation is not overcrowded"],
-          "English Language": ["Approved A1 Speaking & Listening test (e.g. IELTS Life Skills A1)","Or degree taught in English + Ecctis confirmation (if applicable)"],
-          "TB Test (Mandatory)": ["TB certificate from Home Office-approved clinic only (IOM or AMC)","Clinics: Islamabad, Lahore, Karachi, Mirpur (AJK)","Certificate normally valid 6 months from X-ray date"],
-          "Other": ["Previous UK immigration applications/refusals details","Criminal convictions disclosure (if any)","Certified English translations of all non-English documents"]
+          "Relationship": [
+            "Marriage certificate (NADRA/Union Council as applicable) with certified translation if not in English",
+            "Evidence relationship is genuine and subsisting (photos, chats, visits, joint finances, call logs – quality over quantity)",
+            "How you met, marriage circumstances, and cohabitation plans in the UK"
+          ],
+          "Sponsor status": [
+            "British passport or proof of ILR/settled status / eligible sponsor status",
+            "Sponsor’s UK address evidence"
+          ],
+          "Financial – Appendix FM / FM-SE": [
+            "Meet minimum income requirement: £29,000 gross per year for most new partner applications (from 11 April 2024)",
+            "Transitional £18,600 (+ child elements where still applicable) only if already on the partner route before 11 Apr 2024 with same partner – confirm GOV.UK guidance",
+            "Category A employment: 6 months payslips + matching bank statements + employer letter",
+            "Self-employment: tax returns, SA302/tax year overviews, business accounts as required by FM-SE",
+            "Cash savings combination only as permitted by the Rules (specified formula)"
+          ],
+          "English language": [
+            "Approved Secure English Language Test at A1 (or higher) unless exempt (e.g. degree taught in English with Ecctis, nationality exemption list)"
+          ],
+          "Accommodation": [
+            "Adequate accommodation without public funds (tenancy, mortgage, letter from owner + capacity)"
+          ],
+          "Pakistan civil documents": [
+            "CNIC, FRC, marriage registration as applicable; police certificate if requested",
+            "TB test from approved clinic"
+          ]
         },
         financial: {
-          title: "Minimum Income Threshold",
-          main: "£29,000 gross per year (new applications since 11 Apr 2024)",
-          note: "Further increases to £34,500 / £38,700 remain paused as of Aug 2026. No child add-on for new applications.",
-          savings: "Cash savings top-up formula: (Shortfall × 2.5) + £16,000. Must be held 6 consecutive months.",
+          title: "Appendix FM minimum income requirement",
+          main: "£29,000 gross annual income for most new spouse/partner applications (threshold in force since 11 April 2024; further rises were paused pending review – verify before applying).",
+          note: "Child add-ons no longer increase the £29,000 threshold for new applicants. Meeting the figure is necessary but not sufficient – relationship genuineness and English/accommodation still apply.",
+          savings: "Cash savings may top up income only under the FM-SE formula; usually need substantial savings above £16,000 floor rules.",
           methods: [
-            { name: "Category A (Employed 6+ months)", desc: "Use current gross annual salary. Must have been paid at that level for the last 6 months. Evidence: employer letter + 6 months payslips + matching bank statements." },
-            { name: "Category B (Employed <6 months / variable)", desc: "Current salary ≥ £29,000 AND average of last 12 months income ≥ £29,000." },
-            { name: "Self-Employment", desc: "Most recent full financial year (or average of last two). HMRC SA302, accounts, business bank statements required." }
+            { name: "Category A (salaried)", desc: "6 months with same employer; payslips + bank credits + employer letter on letterhead." },
+            { name: "Category B / variable", desc: "As per FM-SE if income varies; follow specified periods carefully." },
+            { name: "Self-employment", desc: "Last full financial year documents per FM-SE; do not mix categories incorrectly." },
+            { name: "Cash savings", desc: "Only specified savings; held for required period; combination rules are strict." }
           ]
         },
         process: {
-          steps: ["Complete online application on GOV.UK","Pay visa fee + Immigration Health Surcharge (IHS)","Upload supporting documents online","Book & attend biometrics at VFS Global (Islamabad / Lahore / Karachi / Mirpur)","Wait for decision (often 12–24 weeks from Pakistan)"],
-          fees: "Approx. £2,064 (visa) + £3,105 (IHS) = £5,169 total Home Office fees (Aug 2026). Plus TB test, English test, translations."
+          steps: [
+            "Gather relationship, finance, English, TB, accommodation evidence",
+            "Online family visa application; pay fee + IHS",
+            "Upload documents; attend VFS biometrics in Pakistan",
+            "Await decision; use UKVI account / eVisa processes as directed"
+          ],
+          fees: "Family visa fee + Immigration Health Surcharge (check GOV.UK)"
         },
-        research: ["Source: GOV.UK Family visa (partner/spouse) + Appendix FM & FM-SE","Financial threshold confirmed £29,000 as of Aug 2026","TB test mandatory – only IOM/AMC clinics accepted","VFS Global continues to handle biometrics in Pakistan","NADRA MRC + FRC by marriage strongly recommended for Pakistani marriages"]
+        research: [
+          "https://www.gov.uk/uk-family-visa",
+          "https://www.gov.uk/government/publications/chapter-8-appendix-fm-family-members",
+          "Appendix FM-SE specified evidence rules"
+        ]
       },
       visit: {
-        title: "Standard Visitor Visa",
-        summary: { threshold: "Sufficient funds", english: "Not required", grant: "Up to 6 months", vac: "VFS Global" },
+        title: "Standard Visitor Visa (Pakistan → UK)",
+        summary: { threshold: "No fixed minimum – trip cost + ties", english: "Not required for short visit", grant: "Usually up to 6 months", vac: "VFS Global (biometrics) + eVisa" },
         docs: {
-          "Identity": ["Valid Pakistani passport","Previous passports if any","CNIC copy"],
-          "Purpose of Visit": ["Cover letter explaining purpose and itinerary","Invitation letter (if visiting family/friends) with host’s status documents","Hotel bookings or accommodation proof"],
-          "Financial": ["Personal bank statements (last 6 months)","Evidence of income / employment / business","Sponsor’s financial documents if being sponsored"],
-          "Ties to Pakistan": ["Employment letter + leave approval","Property ownership / business documents","Family ties evidence"],
-          "Other": ["Travel insurance (recommended)","Flight reservation (optional but helpful)"]
+          "Identity": [
+            "Valid Pakistani passport with blank page (valid for the whole stay; practice often expects 6+ months remaining)",
+            "All previous passports showing travel history",
+            "CNIC copy",
+            "UKVI online application reference and biometric appointment confirmation"
+          ],
+          "Purpose of visit": [
+            "Cover letter: purpose, dates, where you will stay, who pays, why you will return to Pakistan",
+            "Day-by-day or clear itinerary (tourism / family / business as applicable)",
+            "Hotel bookings or host address (prefer refundable bookings; avoid non-refundable tickets before decision)",
+            "If family/friends visit: invitation letter from host with full UK address, relationship, and what they will provide",
+            "Host’s UK status proof (passport/BRP/share code) and proof of address (council tax / utility)",
+            "If business: invitation from UK company stating purpose, dates, who pays costs"
+          ],
+          "Financial evidence": [
+            "Personal bank statements last 6 months (stamped/signed or official e-statements) – consistent activity, not a sudden large deposit",
+            "Salary slips last 3–6 months OR business income proof (for self-employed)",
+            "Employment letter on letterhead: role, salary, approved leave dates, return to work date",
+            "Self-employed: NTN/FBR, business registration, tax returns, invoices as applicable",
+            "If sponsored: sponsor letter, sponsor bank statements, relationship proof, and your own funds still shown where possible"
+          ],
+          "Ties to Pakistan (critical for refusal risk)": [
+            "Evidence you will leave the UK: job, business, property, family dependants, studies",
+            "Property documents or rental agreement if available",
+            "FRC / family documents if relevant to dependants in Pakistan"
+          ],
+          "Other": [
+            "Travel history (Schengen/UK/US visas and entry stamps) if any",
+            "TB test only if visiting for more than 6 months (check GOV.UK TB list)",
+            "Translations of any non-English documents"
+          ]
         },
-        financial: { title: "Funds Requirement", main: "No fixed amount – must show you can support yourself without public funds", note: "Bank statements should show regular genuine activity, not sudden large deposits.", savings: "", methods: [] },
-        process: { steps: ["Apply online on GOV.UK","Pay fee","Upload documents","Biometrics at VFS","Decision (usually a few weeks)"], fees: "Standard Visitor fee applies (check GOV.UK for current amount)." },
-        research: ["Source: GOV.UK Standard Visitor visa guidance","Strong ties to Pakistan are critical for approval"]
+        financial: {
+          title: "Visitor funds (credibility, not a fixed figure)",
+          main: "UKVI does not publish a single minimum bank balance. You must show you can pay for the trip and return travel without working or public funds.",
+          note: "Officers weigh consistency of income, source of funds, and ties to Pakistan more than a one-off high balance. Large last-minute deposits without explanation hurt credibility.",
+          savings: "",
+          methods: [
+            { name: "Own funds", desc: "6 months statements showing regular salary/business credits and enough liquid funds for the stated trip cost." },
+            { name: "Partial host support", desc: "Host letter + host status + host finances; still show your own funds and strong ties to Pakistan." }
+          ]
+        },
+        process: {
+          steps: [
+            "Apply online on GOV.UK (Standard Visitor) and pay the visa fee",
+            "Book VFS biometrics in Pakistan; provide fingerprints and photo",
+            "Upload documents as required by the online system / VFS checklist",
+            "From 2026, successful applicants may receive an eVisa (digital status) rather than a vignette – follow UKVI account instructions",
+            "Travel only after you have confirmed valid permission; carry supporting docs if asked at border"
+          ],
+          fees: "Standard Visitor fee (check GOV.UK current fee; reported £135 for 6-month route from Apr 2026 – verify before paying)"
+        },
+        research: [
+          "https://www.gov.uk/standard-visitor",
+          "https://www.gov.uk/standard-visitor/support-documents",
+          "eVisa information via GOV.UK / British High Commission updates"
+        ]
       },
       student: {
-        title: "Student Visa",
-        summary: { threshold: "Course fees + living costs", english: "Required (usually B2)", grant: "Course duration +", vac: "VFS Global" },
+        title: "Student Visa (Pakistan → UK)",
+        summary: { threshold: "CAS fees + £1,529/mo London or £1,171/mo outside (up to 9 months)", english: "CEFR as required / SELT or nationality exemption", grant: "Course length + wrap-up", vac: "VFS Global" },
         docs: {
-          "Identity": ["Valid passport","CNIC"],
-          "Academic": ["CAS from licensed sponsor","Academic transcripts & certificates + translations","English language evidence (IELTS / equivalent)"],
-          "Financial": ["Bank statements showing required funds for 28 consecutive days","Tuition fee payment receipt or proof of funds covering fees + living costs"],
-          "TB Test": ["Mandatory TB certificate from approved clinic"],
-          "Other": ["ATAS certificate if required","Translations of all non-English documents"]
+          "CAS & identity": [
+            "CAS (Confirmation of Acceptance for Studies) from a licensed Student sponsor",
+            "Valid Pakistani passport",
+            "TB test certificate from UK-approved clinic (Pakistan is on the TB screening list for settlement/long stays – required for Student route)"
+          ],
+          "Academic": [
+            "Documents listed on the CAS (transcripts, certificates)",
+            "English language evidence at the level required (SELT or equivalent as accepted on CAS)"
+          ],
+          "Financial (Appendix Finance)": [
+            "Outstanding first-year tuition as on CAS (minus any amount already paid to the sponsor)",
+            "Living costs: £1,529 per month (London) or £1,171 per month (outside London), up to 9 months – confirm current GOV.UK figures before applying",
+            "Funds held for 28 consecutive days; 28-day period ending within 31 days of application",
+            "Bank statements meeting Appendix Finance format rules (or official financial sponsor / accepted student loan evidence)"
+          ],
+          "Other": [
+            "ATAS certificate if your course requires it",
+            "Consent letter from parents if using parental funds (plus evidence of relationship)"
+          ]
         },
-        financial: { title: "Funds Requirement", main: "Course fees (outstanding) + living costs (£1,334/month London or £1,023/month outside for up to 9 months)", note: "Funds must be held for 28 consecutive days ending no more than 31 days before application.", savings: "", methods: [] },
-        process: { steps: ["Obtain CAS from university","Prepare financial evidence","Apply online","TB test","Biometrics at VFS","Decision"], fees: "Student visa fee + IHS applies." },
-        research: ["Source: GOV.UK Student visa","TB test mandatory for Pakistani applicants"]
+        financial: {
+          title: "Student financial requirement (GOV.UK)",
+          main: "Course fees (per CAS) + maintenance £1,529/month in London or £1,171/month outside London (max 9 months), held 28 consecutive days.",
+          note: "Figures are set in the Immigration Rules and change. Always re-check https://www.gov.uk/student-visa/money before applying. Paid tuition/accommodation on CAS reduces the amount to show.",
+          savings: "",
+          methods: [
+            { name: "Cash funds", desc: "Personal or parent account; 28-day rule; relationship + consent if not your account." },
+            { name: "Official financial sponsor", desc: "Government/university/international organisation letter covering required costs." },
+            { name: "Student loan", desc: "Loan letter from an accepted lender as per Appendix Finance." }
+          ]
+        },
+        process: {
+          steps: [
+            "Obtain CAS and prepare TB test early",
+            "Show funds meeting 28-day rule",
+            "Apply online, pay visa fee + Immigration Health Surcharge (student rate)",
+            "Biometrics at VFS",
+            "Receive decision; create/use UKVI account for eVisa/status as applicable"
+          ],
+          fees: "Student visa fee + IHS (check GOV.UK; amounts change)"
+        },
+        research: [
+          "https://www.gov.uk/student-visa",
+          "https://www.gov.uk/student-visa/money",
+          "https://www.gov.uk/guidance/financial-evidence-for-student-and-child-student-route-applicants"
+        ]
       },
       work: {
-        title: "Skilled Worker / Work Visa",
-        summary: { threshold: "Job offer + salary threshold", english: "Required (usually B1)", grant: "Up to 5 years", vac: "VFS Global" },
+        title: "Skilled Worker Visa (Pakistan → UK)",
+        summary: { threshold: "Salary at going rate / threshold for occupation", english: "B1 usually required", grant: "Up to 5 years typical", vac: "VFS Global" },
         docs: {
-          "Identity": ["Passport","CNIC"],
-          "Sponsorship": ["Certificate of Sponsorship (CoS) from licensed employer","Job details matching CoS"],
-          "Financial": ["Proof of funds if required (or A-rated sponsor certification)"],
-          "English": ["Approved English test at required level"],
-          "TB Test": ["Mandatory for Pakistani applicants"],
-          "Other": ["Criminal record certificate if required for the role"]
+          "Sponsorship": [
+            "Certificate of Sponsorship (CoS) from a licensed UK employer",
+            "Job title and SOC code matching eligible occupation",
+            "Salary meeting the applicable threshold / going rate for that occupation"
+          ],
+          "Identity": ["Valid Pakistani passport","TB test from approved clinic"],
+          "English": ["Approved English test at required level (usually B1) or exemption"],
+          "Financial": ["Personal savings if required under maintenance rules when not certified by sponsor on CoS"],
+          "Qualifications": ["Degrees/experience if required for the role or sponsored as such"]
         },
-        financial: { title: "Salary & Funds", main: "Must meet the going rate / minimum salary for the occupation code", note: "Check current Skilled Worker thresholds on GOV.UK.", savings: "", methods: [] },
-        process: { steps: ["Employer assigns CoS","Apply online","TB test","Biometrics at VFS","Decision"], fees: "Visa fee + IHS (depends on duration)" },
-        research: ["GOV.UK Skilled Worker visa","Sponsor must be Home Office licensed"]
-      }
+        financial: {
+          title: "Skilled Worker funds & salary",
+          main: "You must be paid at least the applicable skilled worker salary threshold or going rate for your occupation code. Maintenance funds apply unless the sponsor certifies maintenance on the CoS.",
+          note: "Thresholds change with Immigration Rules updates. Confirm the code and salary on GOV.UK Skilled Worker pages before relying on an offer.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Employer assigns CoS","Apply online with CoS number","Pay fee + IHS","Biometrics at VFS","Decision and travel"],
+          fees: "Visa fee (varies by length/skill) + IHS – check GOV.UK calculator"
+        },
+        research: ["https://www.gov.uk/skilled-worker-visa"]
+      },
     }
   },
   spain: {
     name: "Spain (Schengen)", flag: "🇪🇸",
     visas: {
       business: {
-        title: "Business Visit Visa (Schengen Type C)",
-        summary: { threshold: "€122.10/day + min €1,098.90", english: "Not required", grant: "Up to 90 days", vac: "Intiana" },
+        title: "Spain Schengen Business Visa Type C (Pakistan → Spain)",
+        summary: { threshold: "Means of subsistence + insurance", english: "Not required for short stay", grant: "Up to 90 days in 180", vac: "BLS / Spain VAC Pakistan" },
         docs: {
-          "Identity": ["Valid passport (3+ months beyond stay, 2 blank pages)","Previous passports","CNIC + copies"],
-          "Application": ["Completed Schengen visa application form","2 recent passport photos (white background)"],
-          "Business Invitation": ["Original business invitation letter from Spanish company","Company registration documents of inviting party (if available)"],
-          "Self-Employed / Business (Applicant)": ["NTN certificate","FBR tax returns (recent years)","Chamber of Commerce recommendation / membership","SECP registration (if limited company)","Business bank statements (6 months)","Letterhead introduction of own business"],
-          "Financial": ["Personal bank statements (last 6 months)","Proof of sufficient funds (€122.10 per day, minimum €1,098.90)"],
-          "Travel": ["Flight reservation (return)","Hotel booking or accommodation proof","Travel medical insurance (€30,000 Schengen-wide)"],
-          "Other": ["Cover letter explaining purpose","Previous Schengen visas / travel history (attach all old passports)"]
+          "Application": ["Schengen application form","Passport with blank pages","Photo per Schengen specs","VAC appointment"],
+          "Business purpose": ["Invitation from Spanish company (purpose, dates, who covers costs)","Applicant employer letter / self-employment proof from Pakistan","Trade register extracts if applicable"],
+          "Travel": ["Flight reservation","Hotel or host address","Travel medical insurance min €30,000 Schengen-wide"],
+          "Financial": ["Bank statements","Income proof","Means of subsistence for stay (Spain/Schengen reference amounts – confirm with VAC)"],
+          "Ties": ["Employment/business/family ties to Pakistan"]
         },
-        financial: { title: "Means of Subsistence (Spain 2026)", main: "€122.10 per day of stay + minimum €1,098.90 per person", note: "Show clear bank statements with genuine activity.", savings: "", methods: [] },
-        process: { steps: ["Book appointment at appointment.thespainvisa.com","Prepare complete file","Attend Intiana centre (Lahore / Islamabad / Karachi)","Submit + biometrics","Track and collect passport"], fees: "€90 + Intiana service fee (PKR at centre)" },
-        research: ["thespainvisa.com + Spanish Embassy","Intiana handles applications","Lahore: 58-D/1 Gulberg III","Previous Schengen history is positive but not a guarantee"]
+        financial: {
+          title: "Schengen means of subsistence",
+          main: "Show sufficient means for the stay and return. Member states publish/update reference amounts; confirm the figure used by the Spanish VAC handling your file.",
+          note: "Insurance is mandatory. Invitation does not replace personal funds assessment.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Book Spain VAC/BLS appointment in Pakistan","Complete form and gather business invitation pack","Submit biometrics and documents","Await decision; collect passport"],
+          fees: "Schengen visa fee (EUR; check VAC for PKR equivalent and service charge)"
+        },
+        research: ["https://www.exteriores.gob.es/","https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy_en"]
       },
       tourist: {
-        title: "Tourist / Visit Visa (Schengen Type C)",
-        summary: { threshold: "€122.10/day + min €1,098.90", english: "Not required", grant: "Up to 90 days", vac: "Intiana" },
+        title: "Spain Schengen Type C – Tourism (Pakistan → Spain)",
+        summary: { threshold: "Means of subsistence + insurance", english: "Not for short stay", grant: "Up to 90 days in 180", vac: "BLS International Spain Pakistan" },
         docs: {
-          "Identity": ["Valid passport","Previous passports","CNIC"],
-          "Application": ["Schengen application form","2 photos"],
-          "Purpose": ["Cover letter with itinerary","Hotel bookings","Flight reservation"],
-          "Financial": ["6 months bank statements","Employment/business proof","Sufficient funds"],
-          "Insurance": ["Travel medical insurance min €30,000"],
-          "Ties to Pakistan": ["Employment letter","Property / business documents","Family ties"]
+          "Application": ["Schengen visa application form","Pakistani passport with blank pages","Photo per Schengen specifications","BLS appointment confirmation"],
+          "Travel": ["Flight reservation","Hotel bookings or invitation + host ID if private stay","Travel medical insurance minimum €30,000 valid for all Schengen states for the entire stay"],
+          "Financial": ["Bank statements (typically last 3–6 months)","Employment letter with leave approval or self-employment/tax documents","Proof of means of subsistence (confirm current Spanish reference amount with BLS checklist)"],
+          "Purpose & ties": ["Cover letter with itinerary and return plans","Evidence of ties to Pakistan (job, business, family, property)","Previous travel history if any"]
         },
-        financial: { title: "Means of Subsistence", main: "€122.10 per day + minimum €1,098.90", note: "Genuine bank activity required.", savings: "", methods: [] },
-        process: { steps: ["Book appointment on thespainvisa.com","Attend Intiana","Biometrics","Decision"], fees: "€90 + service fee" },
-        research: ["thespainvisa.com","Strong ties to Pakistan essential"]
+        financial: {
+          title: "Spain Schengen means of subsistence",
+          main: "Show sufficient funds for living costs and return travel. Verify the current Spanish reference amount on the BLS/consulate checklist.",
+          note: "Mandatory travel medical insurance. Invitation does not replace personal funds or ties assessment.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Complete form and book BLS Spain appointment","Gather insurance, funds, ties and travel proof","Submit biometrics and documents","Await decision and collect passport"],
+          fees: "Schengen visa fee + BLS service charge"
+        },
+        research: ["https://www.exteriores.gob.es/","BLS Spain Pakistan checklist"]
       },
       student: {
-        title: "Student / National Visa (Long Stay)",
-        summary: { threshold: "Proof of funds for studies", english: "May be required", grant: "Course duration", vac: "Intiana / Embassy" },
+        title: "Spain Student Visa – National (Pakistan → Spain)",
+        summary: { threshold: "Admission + financial means", english: "Programme language", grant: "National study visa then TIE", vac: "BLS / Consulate" },
         docs: {
-          "Academic": ["Admission letter from Spanish institution","Academic transcripts + translations"],
-          "Financial": ["Proof of sufficient funds / scholarship"],
-          "Insurance": ["Health insurance covering Spain"],
-          "Identity": ["Passport","Photos","CNIC"],
-          "Other": ["Criminal record / police certificate often required","Medical certificate"]
+          "Admission": ["Acceptance letter from Spanish institution","Proof programme meets study-visa criteria"],
+          "Financial": ["Proof of means for living costs for the authorised stay (per consular guidance)","Tuition payment evidence if required"],
+          "Identity": ["Passport","Academic transcripts and degrees","Criminal record certificate legalised/apostilled as required","Medical certificate if required"],
+          "Insurance": ["Health insurance covering stay in Spain as required for national student visa"],
+          "Accommodation": ["Proof of address in Spain for initial period where required"]
         },
-        financial: { title: "Funds", main: "Must cover tuition + living costs for the study period", note: "Check specific Spanish region / institution requirements.", savings: "", methods: [] },
-        process: { steps: ["Obtain admission","Prepare documents","Apply via Intiana / Spanish mission","Biometrics if required"], fees: "National visa fee applies" },
-        research: ["Spanish Ministry of Foreign Affairs + thespainvisa.com"]
-      }
+        financial: {
+          title: "Spain study funds",
+          main: "Demonstrate financial means for the study period at the level required by the Spanish consulate.",
+          note: "After arrival, complete TIE formalities. Use the national-visa checklist, not only Schengen C.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Obtain admission","Prepare national visa file","BLS appointment and biometrics","Travel and complete TIE in Spain"],
+          fees: "National visa fee + BLS charges"
+        },
+        research: ["https://www.exteriores.gob.es/","BLS Spain national visa guidance"]
+      },
     }
   },
   germany: {
     name: "Germany (Schengen)", flag: "🇩🇪",
     visas: {
       business: {
-        title: "Business / Schengen Visa",
-        summary: { threshold: "Sufficient funds", english: "Not required", grant: "Up to 90 days", vac: "TLS / VFS" },
+        title: "Germany Schengen Type C – Business (Pakistan → Germany)",
+        summary: { threshold: "Subsistence + insurance", english: "Not required for C", grant: "Up to 90/180", vac: "TLScontact / VAC" },
         docs: {
-          "Identity": ["Passport","Previous passports","CNIC"],
-          "Application": ["Application form","Photos"],
-          "Invitation": ["Business invitation from German company"],
-          "Financial & Business": ["Bank statements 6 months","NTN, tax returns, Chamber letter (if self-employed)","Employment letter if employed"],
-          "Travel": ["Flight & hotel reservations","Travel insurance €30,000"],
-          "Other": ["Cover letter","Travel history"]
+          "Business": ["Invitation from German company (purpose, dates, cost bearer)","Applicant employer letter from Pakistan or self-employment docs"],
+          "Application": ["Schengen form","Passport","Photo","Insurance €30,000+"],
+          "Travel": ["Flight and hotel or host arrangements"],
+          "Financial": ["Bank statements","Income proof"],
+          "Ties": ["Evidence of return to Pakistan"]
         },
-        financial: { title: "Funds", main: "Sufficient means for the stay", note: "Strong bank evidence required.", savings: "", methods: [] },
-        process: { steps: ["Apply via German VAC in Pakistan","Biometrics","Decision"], fees: "€90 + VAC fee" },
-        research: ["German mission + VAC portal for Pakistan"]
+        financial: {
+          title: "Business visit funds",
+          main: "Show means for the stay even if the German host pays some costs. Invitation strengthens purpose but does not replace personal credibility.",
+          note: "",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Obtain invitation","Book VAC slot","Submit complete file + biometrics","Decision"],
+          fees: "Schengen fee + VAC charge"
+        },
+        research: ["https://www.auswaertiges-amt.de/en/visa-service"]
       },
       tourist: {
-        title: "Tourist Schengen Visa",
-        summary: { threshold: "Sufficient funds", english: "Not required", grant: "Up to 90 days", vac: "TLS / VFS" },
+        title: "Germany Schengen Short-Stay Type C – Tourism (Pakistan → Germany)",
+        summary: { threshold: "Means of subsistence + insurance", english: "Not required for C visa", grant: "Up to 90 days in 180", vac: "TLScontact / VAC Pakistan" },
         docs: {
-          "Identity": ["Passport","CNIC"],
-          "Purpose": ["Itinerary","Hotel bookings","Flight reservation"],
-          "Financial": ["6 months bank statements","Income proof"],
-          "Insurance": ["Travel insurance €30,000"],
-          "Ties": ["Employment / property / family evidence"]
+          "Application": ["Schengen form","Passport (blank pages, validity rules)","Biometric photo","VAC appointment"],
+          "Travel": ["Flight reservation","Hotel bookings or invitation + host address registration if private stay","Travel medical insurance min €30,000 valid in all Schengen states for full stay"],
+          "Purpose": ["Cover letter with itinerary","Tour plan"],
+          "Financial": ["Bank statements (recent months)","Employment letter or business proof from Pakistan","Means of subsistence per German practice (confirm current daily reference with VAC)"],
+          "Ties": ["Job/business/family ties to Pakistan","Property documents if available"]
         },
-        financial: { title: "Funds", main: "Sufficient means for the stay", note: "", savings: "", methods: [] },
-        process: { steps: ["Appointment at VAC","Submit + biometrics"], fees: "€90 + service fee" },
-        research: ["German mission website"]
+        financial: {
+          title: "Schengen / German means of subsistence",
+          main: "Show sufficient funds for the stay and return. Germany applies Schengen rules plus national reference practice – confirm the amount used by the visa section/VAC at application time.",
+          note: "Insurance is mandatory. Unexplained large deposits and weak ties are common refusal themes for Pakistani applicants.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Book VAC appointment for Germany","Gather form, insurance, funds, ties documents","Submit biometrics + file","Await decision"],
+          fees: "Schengen visa fee + VAC service charge"
+        },
+        research: ["https://www.auswaertiges-amt.de/en/visa-service","https://pakistan.diplo.de/"]
       },
       student: {
-        title: "Student Visa / National Visa",
-        summary: { threshold: "Blocked account or proof of funds", english: "Required", grant: "Course duration", vac: "VAC / Embassy" },
+        title: "Germany National Visa – Study (Pakistan → Germany)",
+        summary: { threshold: "Blocked account / proof of funds (annual amount set by authorities)", english: "Course language requirement", grant: "National D then residence permit", vac: "VAC + consulate process" },
         docs: {
-          "Academic": ["Admission / acceptance letter","Academic documents + translations"],
-          "Financial": ["Blocked account (Sperrkonto) or formal obligation letter / scholarship"],
-          "Insurance": ["Health insurance"],
-          "Identity": ["Passport","Photos"],
-          "Other": ["Motivation letter","CV often requested"]
+          "Admission": ["University admission letter / conditional offer","APS certificate if required for your pathway from Pakistan"],
+          "Financial": ["Blocked account (Sperrkonto) OR other accepted proof covering the official annual living amount – confirm current figure before opening account"],
+          "Language": ["German or English proof as required by the programme"],
+          "Identity": ["Passport","Motivation letter","CV","Academic transcripts and degrees","Travel insurance for entry period"],
+          "Other": ["VAC appointment for national visa"]
         },
-        financial: { title: "Funds", main: "Blocked account amount set by German authorities (check current figure)", note: "Usually covers living costs for one year.", savings: "", methods: [] },
-        process: { steps: ["Get admission","Open blocked account if required","Apply via VAC","Biometrics","Decision"], fees: "National visa fee" },
-        research: ["German missions in Pakistan + DAAD / university guidance"]
+        financial: {
+          title: "German study funding",
+          main: "Most applicants use a blocked account with the amount required by German authorities for one year of living costs (figure is updated periodically – verify before transfer).",
+          note: "Scholarship letters from recognised bodies may reduce or replace blocked funds when accepted by the mission.",
+          savings: "",
+          methods: [{ name: "Blocked account", desc: "Open with an approved provider; funds released monthly after arrival." }]
+        },
+        process: {
+          steps: ["Secure admission (+ APS if applicable)","Open blocked account / prepare funds","Book national visa appointment","Submit biometrics and documents","Enter Germany and register residence permit at Ausländerbehörde"],
+          fees: "National visa fee (check mission)"
+        },
+        research: ["https://www.auswaertiges-amt.de/en/visa-service","https://www.make-it-in-germany.com/"]
+      },
+    }
+  },
+  france: {
+    name: "France", flag: "🇫🇷",
+    visas: {
+      tourist: {
+        title: "France Schengen Type C – Tourism (Pakistan → France)",
+        summary: { threshold: "Subsistence + insurance €30,000+", english: "Not for short stay", grant: "Up to 90 days in 180", vac: "TLS Contact France Pakistan" },
+        docs: {
+          "Application": ["France-Visas online form printout","Passport with blank pages","Schengen photo","TLS appointment confirmation"],
+          "Travel": ["Flight reservation","Hotel bookings OR Attestation d’accueil if staying with a private host","Travel medical insurance min €30,000 covering all Schengen states for the full stay"],
+          "Financial": ["Bank statements recent months","Employment letter or business documents from Pakistan","Proof of means of subsistence per French reference amounts (confirm current daily figure on France-Visas/TLS checklist)"],
+          "Purpose & ties": ["Cover letter and itinerary","Strong ties to Pakistan (job leave letter, property, family)"]
+        },
+        financial: {
+          title: "France / Schengen means of subsistence",
+          main: "Show sufficient resources for the stay and return. Confirm the current daily subsistence reference used by French authorities before applying.",
+          note: "Private host stays require a formal Attestation d’accueil from the French prefecture process.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Complete France-Visas form","Book TLS appointment in Pakistan","Submit biometrics and documents","Await decision and collect passport"],
+          fees: "Schengen visa fee + TLS service charge"
+        },
+        research: ["https://france-visas.gouv.fr/"]
+      },
+      business: {
+        title: "France Schengen Type C – Business (Pakistan → France)",
+        summary: { threshold: "Subsistence + insurance", english: "Not for C", grant: "Up to 90/180", vac: "TLS Contact" },
+        docs: {
+          "Business": ["Invitation from French company (dates, purpose, cost bearer)","Pakistani employer letter or self-employment proof"],
+          "Application": ["France-Visas form","Passport","Photo","Insurance €30,000+"],
+          "Travel": ["Flights and accommodation"],
+          "Financial": ["Bank statements","Income proof"],
+          "Ties": ["Return ties to Pakistan"]
+        },
+        financial: {
+          title: "Business visit funds",
+          main: "Invitation supports purpose; still show personal means and ties.",
+          note: "",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Obtain invitation","France-Visas + TLS","Biometrics","Decision"],
+          fees: "Schengen fee + TLS"
+        },
+        research: ["https://france-visas.gouv.fr/"]
+      },
+      student: {
+        title: "France Long-Stay Student Visa (Pakistan → France)",
+        summary: { threshold: "Monthly resources + tuition", english: "Programme language", grant: "VLS-TS pathway", vac: "TLS + Campus France" },
+        docs: {
+          "Admission": ["Acceptance from French institution","Campus France procedure completed if required for Pakistan"],
+          "Financial": ["Proof of monthly resources at or above the official student minimum (verify current amount on France-Visas)","Tuition payment evidence if required"],
+          "Identity": ["Passport","Academic transcripts and degrees","CV","Motivation letter","Insurance"],
+          "Accommodation": ["Proof of lodging for initial period where required"]
+        },
+        financial: {
+          title: "France student resources",
+          main: "Show monthly living resources meeting French long-stay student requirements (amount updated periodically – check France-Visas).",
+          note: "Campus France steps are often mandatory before the visa appointment for Pakistani students.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Campus France / admission","France-Visas application","TLS biometrics","Travel and complete OFII/validation steps as instructed"],
+          fees: "Visa fee + related charges"
+        },
+        research: ["https://france-visas.gouv.fr/","Campus France Pakistan"]
       }
     }
   },
+  italy: {
+    name: "Italy", flag: "🇮🇹",
+    visas: {
+      tourist: {
+        title: "Italy Schengen Type C – Tourism (Pakistan → Italy)",
+        summary: { threshold: "Subsistence + insurance", english: "Not for C", grant: "Up to 90/180", vac: "Italy Visa Application Centre Pakistan" },
+        docs: {
+          "Application": ["Schengen form","Passport","Photo","Appointment"],
+          "Travel": ["Flights","Hotel bookings","Travel insurance €30,000+ Schengen-wide"],
+          "Financial": ["Bank statements","Employment/business proof","Means of subsistence per Italian practice"],
+          "Ties": ["Job letter with leave","Family/property ties to Pakistan"]
+        },
+        financial: {
+          title: "Italy Schengen funds",
+          main: "Demonstrate means for stay and return. Confirm reference amounts with the Italian VAC checklist for Pakistan.",
+          note: "",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Book appointment","Submit file + biometrics","Await decision"],
+          fees: "Schengen fee + centre fee"
+        },
+        research: ["https://vistoperitalia.esteri.it/"]
+      },
+      business: {
+        title: "Italy Schengen Type C – Business (Pakistan → Italy)",
+        summary: { threshold: "Subsistence + insurance", english: "Not for C", grant: "Up to 90/180", vac: "Italy VAC" },
+        docs: {
+          "Business": ["Invitation from Italian company","Pakistani employer letter"],
+          "Application": ["Form","Passport","Photo","Insurance"],
+          "Travel": ["Flights","Hotels"],
+          "Financial": ["Bank statements"],
+          "Ties": ["Return ties"]
+        },
+        financial: {
+          title: "Business visit funds",
+          main: "Show means for the stay; invitation clarifies purpose.",
+          note: "",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Invitation","VAC appointment","Biometrics","Decision"],
+          fees: "Schengen fee + centre fee"
+        },
+        research: ["https://vistoperitalia.esteri.it/"]
+      },
+      student: {
+        title: "Italy National Student Visa (Pakistan → Italy)",
+        summary: { threshold: "Proof of funds + admission", english: "Programme language", grant: "National D for study", vac: "Italy VAC / consulate" },
+        docs: {
+          "Admission": ["University pre-enrolment / admission as required (Universitaly steps where applicable)"],
+          "Financial": ["Proof of funds for living costs for the academic period (amount per mission guidance)"],
+          "Identity": ["Passport","Academic documents","Insurance","Accommodation proof"],
+          "Other": ["Language evidence if required"]
+        },
+        financial: {
+          title: "Italy study funds",
+          main: "Show sufficient means for the study period per Italian consular guidance for the year of application.",
+          note: "",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Admission / Universitaly steps","National visa appointment","Biometrics","Travel and permesso di soggiorno after arrival"],
+          fees: "National visa fee"
+        },
+        research: ["https://vistoperitalia.esteri.it/","Universitaly"]
+      }
+    }
+  },
+  netherlands: {
+    name: "Netherlands", flag: "🇳🇱",
+    visas: {
+      tourist: {
+        title: "Netherlands Schengen Type C (Pakistan → Netherlands)",
+        summary: { threshold: "Subsistence + insurance", english: "Not for short stay", grant: "Up to 90/180", vac: "VFS Netherlands Pakistan" },
+        docs: {
+          "Application": ["Schengen application form","Passport","Photo"],
+          "Travel": ["Flights","Accommodation","Insurance €30,000+"],
+          "Financial": ["Bank statements","Income proof","Sponsor/guarantee form if a host in NL formally guarantees"],
+          "Ties": ["Employment and family ties to Pakistan"]
+        },
+        financial: {
+          title: "Netherlands Schengen funds",
+          main: "Sufficient means for the stay; formal host guarantee must meet legalisation requirements when used.",
+          note: "",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Prepare file","VFS appointment","Biometrics","Decision"],
+          fees: "Schengen fee + VFS"
+        },
+        research: ["https://www.netherlandsandyou.nl/","https://ind.nl/"]
+      },
+      business: {
+        title: "Netherlands Schengen Type C – Business (Pakistan → Netherlands)",
+        summary: { threshold: "Subsistence + insurance €30,000+", english: "Not for short stay", grant: "Up to 90 days in 180", vac: "VFS Global Netherlands Pakistan" },
+        docs: {
+          "Application": ["Schengen application form","Pakistani passport with blank pages","Photo per Schengen rules","VFS appointment confirmation"],
+          "Business purpose": ["Invitation letter from Dutch company stating purpose, dates, and who pays costs","Applicant’s employer letter from Pakistan or self-employment registration and tax documents"],
+          "Travel": ["Flight reservation","Hotel booking or host address","Travel medical insurance min €30,000 covering all Schengen states for full stay"],
+          "Financial": ["Bank statements last 3–6 months","Proof of income","Means of subsistence for the stay"],
+          "Ties to Pakistan": ["Employment leave approval","Family or property ties","Evidence you will return after the visit"]
+        },
+        financial: {
+          title: "Netherlands business visit funds",
+          main: "Show sufficient means for the stay and return even if the Dutch host covers some costs. Invitation strengthens purpose but does not replace personal credibility.",
+          note: "Insurance is mandatory. Unexplained large deposits and weak employment history increase refusal risk.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Obtain Dutch invitation","Complete Schengen form and book VFS","Submit biometrics and documents","Await decision"],
+          fees: "Schengen visa fee + VFS service charge"
+        },
+        research: ["https://www.netherlandsandyou.nl/","https://ind.nl/"]
+      },
+      student: {
+        title: "Netherlands MVV / Student Residence (Pakistan → Netherlands)",
+        summary: { threshold: "Institutional sponsorship / funds", english: "Programme requirement", grant: "MVV + residence", vac: "VFS / IND process" },
+        docs: {
+          "Admission": ["Offer from recognised Dutch institution (often sponsor for MVV)"],
+          "Financial": ["Funds or institutional guarantee meeting IND study norms"],
+          "Identity": ["Passport","Academic records","Insurance"],
+          "Other": ["TB test if required for long stay from Pakistan"]
+        },
+        financial: {
+          title: "Dutch study funds",
+          main: "Many universities act as recognised sponsors; otherwise show IND-required study funds for the year.",
+          note: "Follow the exact IND/university checklist for your programme.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Admission","University starts MVV/residence where applicable","VFS appointment","Travel and collect residence permit"],
+          fees: "IND / MVV fees"
+        },
+        research: ["https://ind.nl/en/study"]
+      }
+    }
+  },
+  china: {
+    name: "China", flag: "🇨🇳",
+    visas: {
+      tourist: {
+        title: "China Tourist Visa L (Pakistan → China)",
+        summary: { threshold: "Per CVASC checklist", english: "N/A primary", grant: "As issued", vac: "Chinese Visa Application Service Centre" },
+        docs: {
+          "Application": ["Visa form","Passport","Photo per Chinese specs","Centre appointment"],
+          "Purpose": ["Itinerary","Hotel bookings or invitation"],
+          "Support": ["Round-trip flight reservation often required","Bank statements if requested","Employment letter"],
+          "Other": ["Any extra documents listed by the centre in Pakistan for the current month"]
+        },
+        financial: {
+          title: "China tourist support",
+          main: "Follow the Chinese Visa Application Service Centre checklist for Pakistan; flight, hotel and funds proof are commonly requested.",
+          note: "Invitation letter formats are strict when used – follow centre samples.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Prepare form and bookings","Submit at CVASC","Pay fees","Collect passport"],
+          fees: "Per Chinese mission / centre schedule"
+        },
+        research: ["Chinese Visa Application Service Centre Pakistan notices"]
+      },
+      business: {
+        title: "China Business Visa M (Pakistan → China)",
+        summary: { threshold: "Invitation + supporting documents", english: "N/A primary", grant: "As issued on visa foil", vac: "Chinese Visa Application Service Centre" },
+        docs: {
+          "Invitation": ["Invitation letter from a Chinese company meeting current format and stamp requirements"],
+          "Application": ["Visa application form","Passport","Photo meeting Chinese specifications","Centre appointment"],
+          "Pakistan company": ["Employer letter on letterhead","Business registration if self-employed","Bank statements if requested"],
+          "Travel": ["Flight and hotel reservations as listed by the centre"]
+        },
+        financial: {
+          title: "China business visit support",
+          main: "A compliant invitation is central. The centre may still request personal funds and employment proof.",
+          note: "Invitation formats are strict – follow the sample issued by the Chinese Visa Application Service Centre.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Obtain compliant invitation","Book CVASC appointment","Submit passport and documents","Pay fees and collect passport"],
+          fees: "Per Chinese mission / centre schedule"
+        },
+        research: ["Chinese Visa Application Service Centre Pakistan notices"]
+      },
+      student: {
+        title: "China Student Visa X (Pakistan → China)",
+        summary: { threshold: "JW form + admission", english: "Programme language", grant: "X1/X2", vac: "CVASC" },
+        docs: {
+          "Admission": ["Admission notice","JW201/JW202 form"],
+          "Identity": ["Passport","Form","Photo","Medical if X1 requires"],
+          "Financial": ["Scholarship or self-fund evidence as required"],
+          "Academic": ["Transcripts and certificates"]
+        },
+        financial: {
+          title: "China study funds",
+          main: "Scholarship or self-funding per university and mission requirements.",
+          note: "",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Admission + JW","Medical if needed","CVASC","Residence permit formalities in China for long programmes"],
+          fees: "Per centre"
+        },
+        research: ["University international office + CVASC"]
+      }
+    }
+  },
+  qatar: {
+    name: "Qatar", flag: "🇶🇦",
+    visas: {
+      tourist: {
+        title: "Qatar Visit / Tourist (Pakistan → Qatar)",
+        summary: { threshold: "Per Hayya / airline / sponsor channel", english: "N/A", grant: "Product-dependent", vac: "Official Hayya or authorised channels" },
+        docs: {
+          "Identity": ["Passport with required validity","Photo"],
+          "Channel": ["Apply via official Hayya platform or airline/hotel sponsor as currently allowed for Pakistani nationals"],
+          "Support": ["Return ticket","Hotel or host details","Bank statement if requested"]
+        },
+        financial: {
+          title: "Qatar visit funds",
+          main: "Requirements depend on the official product used. Follow Hayya or authorised carrier instructions only.",
+          note: "Avoid unofficial agents.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Choose official channel","Submit and pay","Receive approval before travel"],
+          fees: "Per product"
+        },
+        research: ["https://hayya.qa/","Qatar official visa pages"]
+      },
+      business: {
+        title: "Qatar Business Visit (Pakistan → Qatar)",
+        summary: { threshold: "Host / sponsor driven", english: "N/A", grant: "As issued", vac: "Official Hayya / MOI / company channels" },
+        docs: {
+          "Invitation": ["Qatar company invitation or work-visit authorisation as applicable"],
+          "Identity": ["Pakistani passport with required validity","Photo"],
+          "Pakistan side": ["Employer letter confirming position and purpose of travel"],
+          "Travel": ["Return/onward ticket when requested"]
+        },
+        financial: {
+          title: "Qatar business visit",
+          main: "Host company processing often drives approval. Keep passport validity, tickets and employment letter ready.",
+          note: "Use only official channels; product rules change.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Host initiates approval","Applicant provides passport details","Receive visa/entry permit","Travel with printed approval"],
+          fees: "Per official channel"
+        },
+        research: ["https://hayya.qa/","Qatar official visa / MOI services"]
+      },
+      student: {
+        title: "Qatar Student Visa (Pakistan → Qatar)",
+        summary: { threshold: "University sponsorship", english: "Programme requirement", grant: "Linked to institution", vac: "University + official visa" },
+        docs: {
+          "Admission": ["Offer from Qatari institution","University visa support letter"],
+          "Identity": ["Passport","Academic records","Medical if required"],
+          "Financial": ["Funds or scholarship as required by the university"]
+        },
+        financial: {
+          title: "Qatar study",
+          main: "Usually institution-led; follow the university international office checklist.",
+          note: "",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Admission","University visa process","Travel and residence formalities"],
+          fees: "Per university / state fees"
+        },
+        research: ["University international office Qatar"]
+      }
+    }
+  },
+  ireland: {
+    name: "Ireland", flag: "🇮🇪",
+    visas: {
+      tourist: {
+        title: "Ireland Short Stay C Visit (Pakistan → Ireland)",
+        summary: { threshold: "Funds + ties", english: "Not primary", grant: "Up to 90 days typical", vac: "VFS Ireland Pakistan" },
+        docs: {
+          "Application": ["AVATS online application","Passport","Photo"],
+          "Purpose": ["Cover letter","Itinerary","Invitation if any"],
+          "Financial": ["Bank statements","Employment proof"],
+          "Ties": ["Return ties to Pakistan"],
+          "Other": ["Travel insurance recommended"]
+        },
+        financial: {
+          title: "Ireland visit funds",
+          main: "Show you can fund the stay and leave before permission expires. Consistency of funds and ties matter.",
+          note: "Ireland is not Schengen; UK visa does not grant entry to Ireland automatically.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Apply on AVATS","VFS biometrics","Decision"],
+          fees: "Irish visa fee + VFS"
+        },
+        research: ["https://www.irishimmigration.ie/"]
+      },
+      student: {
+        title: "Ireland Study Visa (Pakistan → Ireland)",
+        summary: { threshold: "Fees + living funds (INIS levels)", english: "Course requirement", grant: "Course linked", vac: "VFS Ireland" },
+        docs: {
+          "Admission": ["Letter of acceptance from Irish institution"],
+          "Financial": ["Proof of tuition payment or ability to pay","Living funds meeting Irish Immigration required level (confirm current figure on irishimmigration.ie)"],
+          "Identity": ["Passport","Academic documents","Medical insurance"],
+          "Other": ["TB test if required","English evidence if required"]
+        },
+        financial: {
+          title: "Ireland study funds",
+          main: "Pay or show tuition plus the living fund amount published by Irish Immigration for your course length.",
+          note: "Check irishimmigration.ie for the current financial evidence amounts before applying.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Accept offer","Show funds","AVATS study application","VFS","Travel"],
+          fees: "Visa fee + VFS"
+        },
+        research: ["https://www.irishimmigration.ie/"]
+      },
+      business: {
+        title: "Ireland Short Stay ‘C’ Business Visit (Pakistan → Ireland)",
+        summary: { threshold: "Funds + ties", english: "Not primary test", grant: "Usually up to 90 days", vac: "VFS Ireland Pakistan" },
+        docs: {
+          "Application": ["AVATS online application summary","Passport","Photo"],
+          "Business": ["Invitation from Irish company stating purpose and dates","Pakistani employer letter confirming role and return to work"],
+          "Financial": ["Bank statements","Income proof"],
+          "Travel": ["Itinerary","Accommodation details"],
+          "Ties": ["Evidence of return to Pakistan"]
+        },
+        financial: {
+          title: "Ireland business visit funds",
+          main: "Show you can fund the stay and will leave before permission expires. Ireland is not in Schengen; a UK visa does not grant entry to Ireland.",
+          note: "",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Complete AVATS application","VFS biometrics in Pakistan","Await decision"],
+          fees: "Irish visa fee + VFS charge"
+        },
+        research: ["https://www.irishimmigration.ie/"]
+      },
+    }
+  },
+  portugal: {
+    name: "Portugal", flag: "🇵🇹",
+    visas: {
+      tourist: {
+        title: "Portugal Schengen Type C – Tourism (Pakistan → Portugal)",
+        summary: { threshold: "Subsistence + insurance €30,000+", english: "Not for short stay", grant: "Up to 90 days in 180", vac: "VFS / Portugal VAC Pakistan" },
+        docs: {
+          "Application": ["Schengen form","Passport","Photo","Appointment"],
+          "Travel": ["Flight reservation","Hotel bookings","Travel medical insurance min €30,000 Schengen-wide"],
+          "Financial": ["Bank statements 3–6 months","Employment letter or business proof","Means of subsistence per Portuguese VAC checklist"],
+          "Ties": ["Cover letter","Job/family/property ties to Pakistan"]
+        },
+        financial: {
+          title: "Portugal Schengen funds",
+          main: "Demonstrate funds for the stay and return. Confirm any published reference amounts with the VAC handling your file.",
+          note: "Mandatory insurance. Consistency of funds and ties outweigh a one-off high balance.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Book appointment","Submit documents and biometrics","Await decision"],
+          fees: "Schengen fee + VAC service charge"
+        },
+        research: ["https://vistos.mne.gov.pt/"]
+      },
+      business: {
+        title: "Portugal Schengen Type C – Business (Pakistan → Portugal)",
+        summary: { threshold: "Subsistence + insurance", english: "Not for C", grant: "Up to 90/180", vac: "Portugal VAC" },
+        docs: {
+          "Business": ["Invitation from Portuguese company","Pakistani employer letter"],
+          "Application": ["Form","Passport","Photo","Insurance €30,000+"],
+          "Travel": ["Flights","Hotels"],
+          "Financial": ["Bank statements","Income proof"],
+          "Ties": ["Return ties to Pakistan"]
+        },
+        financial: {
+          title: "Portugal business visit funds",
+          main: "Show means for the stay; invitation clarifies business purpose.",
+          note: "",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Invitation","VAC appointment","Biometrics","Decision"],
+          fees: "Schengen fee + VAC"
+        },
+        research: ["https://vistos.mne.gov.pt/"]
+      },
+      student: {
+        title: "Portugal Study Visa (Pakistan → Portugal)",
+        summary: { threshold: "Admission + funds", english: "Programme language", grant: "National study visa", vac: "Portugal VAC" },
+        docs: {
+          "Admission": ["Acceptance from Portuguese institution"],
+          "Financial": ["Proof of means for living costs per consular guidance"],
+          "Identity": ["Passport","Academic records","Insurance","Accommodation"],
+          "Other": ["Criminal record certificate if required"]
+        },
+        financial: {
+          title: "Portugal study funds",
+          main: "Show living means for the study period as required by the consulate.",
+          note: "",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Admission","National visa file","Biometrics","Travel and residence registration"],
+          fees: "National visa fee"
+        },
+        research: ["https://vistos.mne.gov.pt/"]
+      }
+    }
+  },
+
+  greece: {
+    name: "Greece", flag: "🇬🇷",
+    visas: {
+      tourist: {
+        title: "Greece Schengen Type C – Tourism (Pakistan → Greece)",
+        summary: { threshold: "Subsistence + insurance €30,000+", english: "Not for short stay", grant: "Up to 90 days in 180", vac: "Greece VAC / VFS Pakistan" },
+        docs: {
+          "Application": ["Schengen form","Passport with blank pages","Biometric photo","Appointment confirmation"],
+          "Travel": ["Flight reservation","Hotel bookings for full stay","Travel medical insurance min €30,000 Schengen-wide"],
+          "Financial": ["Bank statements 3–6 months","Employment letter with leave dates or business/tax documents","Proof of means of subsistence per Greek VAC checklist"],
+          "Purpose & ties": ["Cover letter and itinerary","Strong ties to Pakistan (job, family, property)","Previous visas/travel history if any"]
+        },
+        financial: {
+          title: "Greece Schengen funds",
+          main: "Demonstrate funds for accommodation, daily costs and return. Confirm the reference amount used by the Greek mission/VAC for your appointment.",
+          note: "Mandatory insurance. Credibility of ties to Pakistan is heavily weighted for Pakistani applicants.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Book VAC appointment","Prepare complete Schengen file","Biometrics and submission","Decision and passport collection"],
+          fees: "Schengen fee + VAC service charge"
+        },
+        research: ["Greek Ministry of Foreign Affairs visa pages","VAC Greece Pakistan checklist"]
+      },
+      business: {
+        title: "Greece Schengen Type C – Business (Pakistan → Greece)",
+        summary: { threshold: "Subsistence + insurance", english: "Not for C", grant: "Up to 90/180", vac: "Greece VAC" },
+        docs: {
+          "Business": ["Invitation from Greek company (purpose, dates, cost bearer)","Pakistani employer letter or self-employment proof"],
+          "Application": ["Schengen form","Passport","Photo","Insurance €30,000+"],
+          "Travel": ["Flights","Hotels or host arrangements"],
+          "Financial": ["Bank statements","Income proof"],
+          "Ties": ["Evidence of return to Pakistan"]
+        },
+        financial: {
+          title: "Greece business visit funds",
+          main: "Show means for the stay; invitation clarifies purpose but personal funds and ties still matter.",
+          note: "",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Obtain invitation","VAC appointment","Biometrics","Decision"],
+          fees: "Schengen fee + VAC"
+        },
+        research: ["Greek MFA visa pages"]
+      },
+      student: {
+        title: "Greece Student / National Study Visa (Pakistan → Greece)",
+        summary: { threshold: "Admission + living funds", english: "Programme language requirement", grant: "National study visa", vac: "Greece VAC / consulate" },
+        docs: {
+          "Admission": ["Acceptance from a recognised Greek institution","Proof of programme details and duration"],
+          "Financial": ["Proof of funds for living costs for the study period per consular guidance","Tuition payment evidence if required"],
+          "Identity": ["Passport","Academic transcripts and degrees","Criminal record certificate if required","Health insurance"],
+          "Accommodation": ["Proof of lodging where required"],
+          "Other": ["Language certificate if the programme requires it"]
+        },
+        financial: {
+          title: "Greece study funds",
+          main: "Show living means for the authorised study period at the level required by the Greek consulate for that year.",
+          note: "National study visas differ from short-stay Schengen C – follow the national checklist.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Obtain admission","Prepare national visa file","VAC biometrics","Travel and residence formalities in Greece"],
+          fees: "National visa fee + VAC charges"
+        },
+        research: ["Greek consular study guidance"]
+      },
+    }
+  },
+  sweden: {
+    name: "Sweden", flag: "🇸🇪",
+    visas: {
+      tourist: {
+        title: "Sweden Schengen Type C – Tourism (Pakistan → Sweden)",
+        summary: { threshold: "Subsistence + insurance €30,000+", english: "Not for short stay", grant: "Up to 90 days in 180", vac: "VFS Sweden Pakistan" },
+        docs: {
+          "Application": ["Schengen application form","Passport","Photo","VFS appointment"],
+          "Travel": ["Flight reservation","Hotel bookings","Travel medical insurance min €30,000 for all Schengen states"],
+          "Financial": ["Bank statements","Employment or business proof","Means of subsistence per Migrationsverket/VAC practice"],
+          "Ties": ["Job leave letter","Family/property ties to Pakistan","Cover letter with itinerary"]
+        },
+        financial: {
+          title: "Sweden Schengen funds",
+          main: "Show sufficient means for the stay and return. Follow the VFS Sweden checklist for Pakistan for any stated reference amounts.",
+          note: "Insurance is mandatory. Weak ties to Pakistan are a common refusal factor.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Book VFS Sweden appointment","Submit complete file and biometrics","Await decision"],
+          fees: "Schengen fee + VFS charge"
+        },
+        research: ["https://www.migrationsverket.se/","VFS Sweden Pakistan"]
+      },
+      business: {
+        title: "Sweden Schengen Type C – Business (Pakistan → Sweden)",
+        summary: { threshold: "Subsistence + insurance", english: "Not for C", grant: "Up to 90/180", vac: "VFS Sweden" },
+        docs: {
+          "Business": ["Invitation from Swedish company (purpose, dates, cost responsibility)","Pakistani employer letter or self-employment documents"],
+          "Application": ["Schengen form","Passport","Photo","Insurance €30,000+"],
+          "Travel": ["Flights","Hotels"],
+          "Financial": ["Bank statements","Income proof"],
+          "Ties": ["Return ties to Pakistan"]
+        },
+        financial: {
+          title: "Sweden business visit funds",
+          main: "Show means for the stay. Invitation supports purpose; personal credibility remains essential.",
+          note: "",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Obtain invitation","VFS appointment","Biometrics","Decision"],
+          fees: "Schengen fee + VFS"
+        },
+        research: ["https://www.migrationsverket.se/"]
+      },
+      student: {
+        title: "Sweden Residence Permit for Studies (Pakistan → Sweden)",
+        summary: { threshold: "Admission + full funding", english: "Programme language", grant: "Residence permit", vac: "VFS / Missions" },
+        docs: {
+          "Admission": ["Admission from Swedish university"],
+          "Financial": ["Proof of funds for the full period per Migrationsverket required amount (confirm current monthly figure)"],
+          "Identity": ["Passport","Academic records","Insurance"]
+        },
+        financial: { title: "Sweden study funds", main: "Show the full living cost amount required by Migrationsverket for your permit length.", note: "Check migrationsverket.se for the current figure before applying.", savings: "", methods: [] },
+        process: { steps: ["Admission","Online residence permit application","Biometrics","Decision"], fees: "Residence permit fee" },
+        research: ["https://www.migrationsverket.se/"]
+      }
+    }
+  },
+
+  kuwait: {
+    name: "Kuwait", flag: "🇰🇼",
+    visas: {
+      tourist: {
+        title: "Kuwait Visit Visa (Pakistan → Kuwait)",
+        summary: { threshold: "Sponsor / hotel / official channel", english: "N/A", grant: "As issued", vac: "Authorised sponsor, hotel, or official channel" },
+        docs: {
+          "Identity": ["Pakistani passport with required validity","Photo","CNIC"],
+          "Sponsorship": ["Kuwaiti sponsor, hotel, or approved channel as currently allowed for Pakistani nationals"],
+          "Support": ["Return ticket","Hotel booking if required","Bank statement if requested"]
+        },
+        financial: {
+          title: "Kuwait visit",
+          main: "Most visit permissions are sponsor or hotel driven. Follow the official channel checklist only.",
+          note: "Avoid unofficial agents. Confirm current rules for Pakistani nationals before paying.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Secure lawful sponsor/hotel/online approval","Submit passport details","Receive permit","Travel with printed copy"],
+          fees: "Per channel"
+        },
+        research: ["Kuwait MOI / official channels","Kuwait mission notices for Pakistan"]
+      },
+      employment: {
+        title: "Kuwait Work / Residence (Pakistan → Kuwait)",
+        summary: { threshold: "Employer work permit", english: "N/A primary", grant: "Linked to employer", vac: "After work authorisation" },
+        docs: {
+          "Sponsorship": ["Kuwait employer obtains labour/work authorisation"],
+          "Employee": ["Passport","Photos","Attested educational certificates as required","Medical fitness","Police clearance if required"],
+          "Pakistan": ["HEC/MOFA attestation chain often required"]
+        },
+        financial: {
+          title: "Employment sponsorship",
+          main: "Employer sponsorship drives the process. Contract and authorised visa number are central.",
+          note: "Plan time for document attestation.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Job offer","Employer authorisation","Medicals and attestations","Visa/entry","Residence formalities in Kuwait"],
+          fees: "Mostly employer-side"
+        },
+        research: ["Kuwait Public Authority of Manpower guidance"]
+      },
+      transit: {
+        title: "Kuwait Transit (Pakistan → Kuwait)",
+        summary: { threshold: "Airline / layover rules", english: "N/A", grant: "Short transit window", vac: "Airline" },
+        docs: {
+          "Travel": ["Confirmed onward ticket within the allowed transit time","Passport valid as required by the airline"],
+          "Visa": ["Transit visa only if your routing and nationality require it – confirm with the operating airline before travel"],
+          "Support": ["Hotel only if an overnight transit product requires it"]
+        },
+        financial: {
+          title: "Transit",
+          main: "Usually airline-driven rather than a full visit-funds assessment.",
+          note: "Do not assume airside transit is always visa-free for Pakistani passports – verify per itinerary.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Confirm transit rules with airline","Obtain transit permission if required","Travel with printed approval and onward ticket"],
+          fees: "Per airline product"
+        },
+        research: ["Operating airline transit desk"]
+      },
+    }
+  },
+  bahrain: {
+    name: "Bahrain", flag: "🇧🇭",
+    visas: {
+      tourist: {
+        title: "Bahrain Visit Visa (Pakistan → Bahrain)",
+        summary: { threshold: "eVisa / airline / official channel", english: "N/A", grant: "Product-dependent", vac: "Official NPRA / airline channels" },
+        docs: {
+          "Identity": ["Passport with required validity","Photo"],
+          "Application": ["Official Bahrain eVisa/NPRA or authorised airline channel as eligible for Pakistani passports"],
+          "Support": ["Return ticket","Hotel booking","Bank statement if portal requires"]
+        },
+        financial: {
+          title: "Bahrain visit funds",
+          main: "Follow the official portal checklist. eVisa vs other processes can change for Pakistani nationals.",
+          note: "Use only official government or airline channels.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Check eligibility on official portal","Apply and pay","Travel with approval printout"],
+          fees: "Per product"
+        },
+        research: ["https://www.evisa.gov.bh/","Bahrain NPRA"]
+      },
+      employment: {
+        title: "Bahrain Work Visa / Residence (Pakistan → Bahrain)",
+        summary: { threshold: "Employer LMRA sponsorship", english: "N/A primary", grant: "Linked to employer", vac: "After employer authorisation" },
+        docs: {
+          "Sponsorship": ["Bahraini employer processes LMRA work permit / authorisation"],
+          "Employee": ["Passport with required validity","Photographs","Educational certificates attested as required for the role","Medical fitness from approved clinics"],
+          "Pakistan": ["HEC and MOFA attestation often required for degrees before Bahrain acceptance"]
+        },
+        financial: {
+          title: "Employment sponsorship",
+          main: "Employer sponsorship drives the work residence. Salary is contractual; personal savings are secondary to a valid LMRA approval.",
+          note: "Plan extra time for attestation chains from Pakistan.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Receive job offer","Employer completes LMRA steps","Complete medicals and attestations","Entry permit / visa","Travel and complete residence formalities in Bahrain"],
+          fees: "Primarily employer-side per contract and LMRA rules"
+        },
+        research: ["Bahrain LMRA employer guidance"]
+      },
+      transit: {
+        title: "Bahrain Transit (Pakistan → Bahrain)",
+        summary: { threshold: "Airline / layover rules", english: "N/A", grant: "Short transit window", vac: "Airline" },
+        docs: {
+          "Travel": ["Confirmed onward ticket within the airline’s allowed transit time","Pakistani passport valid as required by the carrier"],
+          "Visa product": ["Transit visa only if your nationality and routing require it – confirm with the operating airline before check-in"],
+          "Support": ["Hotel booking only if an overnight transit package requires it","Printed transit approval if issued"]
+        },
+        financial: {
+          title: "Transit",
+          main: "Usually airline-driven rather than a full visit-funds assessment. The key test is a valid onward ticket and any required transit permission.",
+          note: "Do not assume airside transit is always available without a visa for Pakistani passports – verify for each itinerary.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Confirm transit rules with the airline for your exact flight numbers","Obtain transit permission if required","Travel with passport, onward ticket and printed approval"],
+          fees: "Per airline transit product"
+        },
+        research: ["Operating airline transit desk","Airport transit guidance for Bahrain"]
+      },
+    }
+  },
+  oman: {
+    name: "Oman", flag: "🇴🇲",
+    visas: {
+      tourist: {
+        title: "Oman Tourist / Visit Visa (Pakistan → Oman)",
+        summary: { threshold: "eVisa / embassy rules for Pakistani nationals", english: "N/A", grant: "Product-dependent", vac: "Official eVisa or embassy" },
+        docs: {
+          "Identity": ["Passport with required validity","Photo"],
+          "Application": ["Official Oman eVisa portal or embassy process as currently available for Pakistani passports"],
+          "Support": ["Return ticket","Hotel bookings","Bank statement if requested"]
+        },
+        financial: {
+          title: "Oman visit funds",
+          main: "Follow the official eVisa/embassy checklist. Eligibility can change for Pakistani nationals.",
+          note: "Confirm on official Royal Oman Police eVisa site before paying third parties.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Check official eligibility","Apply and pay on official channel","Travel with approval"],
+          fees: "Per official schedule"
+        },
+        research: ["https://evisa.rop.gov.om/","Omani mission Pakistan"]
+      },
+      employment: {
+        title: "Oman Work / Employment Residence (Pakistan → Oman)",
+        summary: { threshold: "Employer labour clearance", english: "N/A primary", grant: "Linked to employer", vac: "After employer authorisation" },
+        docs: {
+          "Sponsorship": ["Omani employer obtains labour and visa authorisation"],
+          "Employee": ["Passport","Photos","Attested qualifications as required for the occupation","Medical fitness examination"],
+          "Pakistan": ["Degree attestation (HEC/MOFA) when required by the employer or authorities"]
+        },
+        financial: {
+          title: "Employment sponsorship",
+          main: "Employer sponsorship is the core requirement. The employment contract and authorised visa drive the process.",
+          note: "Attestation timelines should be planned before the employer submits clearance.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Job offer","Employer labour clearance","Medicals and attestations","Visa issuance","Travel and residence card formalities in Oman"],
+          fees: "Mostly employer-side"
+        },
+        research: ["Oman Ministry of Labour / employer guidance"]
+      },
+      transit: {
+        title: "Oman Transit (Pakistan → Oman)",
+        summary: { threshold: "Airline / layover rules", english: "N/A", grant: "Short transit window", vac: "Airline" },
+        docs: {
+          "Travel": ["Confirmed onward ticket within allowed transit time","Pakistani passport valid as required by the airline"],
+          "Visa product": ["Transit visa only if required for your routing and nationality – confirm before travel"],
+          "Support": ["Hotel only if overnight transit product requires it","Printed approval if issued"]
+        },
+        financial: {
+          title: "Transit",
+          main: "Airline-driven. Focus on onward ticket timing and any mandatory transit visa product.",
+          note: "Rules depend on whether you pass immigration or remain airside – confirm with the carrier.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Confirm Oman transit rules with the airline","Obtain transit visa if needed","Travel with passport and onward ticket"],
+          fees: "Per airline"
+        },
+        research: ["Operating airline","Oman airport transit information"]
+      },
+    }
+  },
+
   usa: {
     name: "United States", flag: "🇺🇸",
     visas: {
       b1b2: {
-        title: "B-1/B-2 Visitor Visa",
-        summary: { threshold: "Strong ties + funds", english: "Interview", grant: "Usually multiple entry", vac: "US Embassy / Consulate" },
+        title: "B-1/B-2 Visitor Visa (Pakistan → USA)",
+        summary: { threshold: "Ties + trip funds (no fixed $ amount)", english: "Interview in English/Urdu as practical", grant: "Often multiple entry; validity varies", vac: "US Embassy Islamabad / Consulate Karachi" },
         docs: {
-          "Identity": ["Valid passport","DS-160 confirmation","Photo"],
-          "Purpose": ["Cover letter / invitation if any","Itinerary"],
-          "Financial & Ties": ["Bank statements","Employment letter / business documents","Property ownership","Family ties evidence"],
-          "Other": ["Previous US visas if any","Travel history"]
+          "Application": [
+            "DS-160 confirmation page",
+            "MRV fee receipt",
+            "Interview appointment confirmation (ustraveldocs.com/pk)",
+            "Valid Pakistani passport"
+          ],
+          "Purpose": [
+            "Cover letter / itinerary stating purpose (tourism, family, short business)",
+            "Invitation letter if visiting family/friends (helpful, not a guarantee)",
+            "Conference/business invitation if B-1 activities"
+          ],
+          "Financial & ties to Pakistan": [
+            "Bank statements and income proof",
+            "Employment letter or business documents (NTN, registration)",
+            "Property / family ties evidence",
+            "Evidence you will depart the US after the visit (INA 214(b) is the main refusal ground)"
+          ],
+          "Travel history": [
+            "Previous passports and visas (UK/Schengen/US) if any"
+          ]
         },
-        financial: { title: "Funds & Ties", main: "No fixed amount – must convince officer you will return to Pakistan", note: "Strong economic, family and social ties are decisive.", savings: "", methods: [] },
-        process: { steps: ["Complete DS-160","Pay MRV fee","Book interview (Islamabad or Karachi)","Attend interview"], fees: "MRV fee (check travel.state.gov)" },
-        research: ["travel.state.gov","Interview is critical"]
+        financial: {
+          title: "Funds & 214(b)",
+          main: "No published fixed bank balance. You must show you can fund the trip and that you have strong ties to Pakistan compelling return.",
+          note: "Consular officers decide case-by-case. Sudden large deposits or weak employment history commonly undermine applications from Pakistan.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: [
+            "Complete DS-160 at ceac.state.gov",
+            "Pay MRV fee and schedule interview via ustraveldocs.com/pk",
+            "Attend interview with passport and supporting documents (officer may or may not review all papers)",
+            "If approved, follow instructions for passport return"
+          ],
+          fees: "MRV fee (see travel.state.gov / ustraveldocs current amount)"
+        },
+        research: [
+          "https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visitor.html",
+          "https://pk.usembassy.gov/nonimmigrant-visas/",
+          "https://www.ustraveldocs.com/pk/"
+        ]
       },
       student: {
         title: "F-1 Student Visa",
@@ -261,175 +1313,310 @@ const DB = {
         ]
       },
       work: {
-        title: "Work Visa (H-1B / L-1 / Other)",
-        summary: { threshold: "Petition approved", english: "Varies", grant: "As per petition", vac: "US Embassy" },
+        title: "US Temporary Work Visa (H-1B / L-1 / Other) – Pakistan",
+        summary: { threshold: "Approved petition (employer-driven)", english: "Interview", grant: "As per petition", vac: "US Embassy Islamabad / Consulate Karachi" },
         docs: {
-          "Petition": ["Approved I-129 / petition notice"],
-          "Identity": ["Passport","DS-160","Photo"],
-          "Supporting": ["Education & experience documents","Employment letter"]
+          "Petition": ["Notice of approved petition (e.g. I-797) where applicable","Employer support letter"],
+          "Application": ["DS-160 confirmation","MRV fee receipt","Interview appointment via ustraveldocs.com/pk","Valid passport"],
+          "Qualifications": ["Degrees and experience matching the petition","Licensing if required"],
+          "Dependents": ["If H-4/L-2: relationship certificates and each dependent DS-160"]
         },
-        financial: { title: "Sponsorship", main: "Employer petition is primary; personal funds secondary", note: "", savings: "", methods: [] },
-        process: { steps: ["Employer files petition","After approval apply for visa","Interview"], fees: "MRV + petition fees (employer)" },
-        research: ["USCIS + travel.state.gov"]
-      }
+        financial: {
+          title: "Petition-based work",
+          main: "Driven by USCIS-approved employer petition. Personal bank balance is secondary to a valid petition and interview admissibility.",
+          note: "H-1B, L-1, O-1 and other categories differ – apply only in the category matching your petition.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Employer petition with USCIS","DS-160 + MRV after approval","Interview in Pakistan","Enter in correct status if approved"],
+          fees: "MRV fee (petition fees usually employer-paid)"
+        },
+        research: ["https://travel.state.gov/content/travel/en/us-visas/employment.html","https://www.ustraveldocs.com/pk/"]
+      },
     }
   },
   canada: {
     name: "Canada", flag: "🇨🇦",
     visas: {
       visitor: {
-        title: "Visitor Visa (Temporary Resident)",
-        summary: { threshold: "Sufficient funds", english: "May be tested", grant: "Up to 6 months typical", vac: "VFS / VAC" },
+        title: "Canada Visitor Visa / TRV (Pakistan → Canada)",
+        summary: { threshold: "Sufficient funds for stay + ties", english: "May be assessed", grant: "Often up to 6 months per visit", vac: "VFS / VAC biometrics" },
         docs: {
-          "Identity": ["Passport","CNIC","Photos"],
-          "Purpose": ["Invitation letter (if any)","Itinerary","Purpose letter"],
-          "Financial": ["Bank statements","Employment / business proof"],
-          "Ties": ["Property, family, employment evidence in Pakistan"]
+          "Identity": ["Valid Pakistani passport","CNIC","Digital photo meeting IRCC specs","Family information forms as required in account"],
+          "Purpose": ["Purpose of travel letter","Invitation letter if visiting family (with host status in Canada)","Itinerary and accommodation"],
+          "Financial": ["Bank statements","Employment/business proof","Tax documents if available"],
+          "Ties to Pakistan": ["Job letter with leave approval","Property/family ties","Evidence of return"],
+          "Biometrics & forms": ["Biometrics appointment (required for many Pakistan applications)","IMM forms via IRCC secure account"]
         },
-        financial: { title: "Funds", main: "Enough for the stay without working", note: "Depends on length of stay and hosting.", savings: "", methods: [] },
-        process: { steps: ["Apply online via IRCC","Biometrics at VAC","Decision"], fees: "Visa + biometrics fee" },
-        research: ["canada.ca / IRCC","Biometrics required"]
+        financial: {
+          title: "Visitor funds",
+          main: "Show you can cover travel, stay and return without unauthorised work. IRCC assesses overall economic stability and ties.",
+          note: "No single published fixed amount for all visitor cases; depends on length of stay and whether host supports you.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Create IRCC account and complete visitor application","Pay fees and give biometrics","Submit documents online","Await decision; check passport request instructions"],
+          fees: "TRV fee + biometrics fee (see IRCC fee list)"
+        },
+        research: ["https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html","https://www.canada.ca/en/immigration-refugees-citizenship/services/biometrics.html"]
       },
       spouse: {
-        title: "Spouse / Partner Sponsorship",
-        summary: { threshold: "Sponsor meets LICO if required", english: "Not always", grant: "PR pathway", vac: "IRCC / VAC" },
+        title: "Canada Spouse Sponsorship (Pakistan → Canada)",
+        summary: { threshold: "Sponsor income / undertaking (no MIR identical to UK)", english: "Not primary like UK A1", grant: "PR pathway when approved", vac: "VAC biometrics" },
         docs: {
-          "Relationship": ["Marriage certificate (Nikah Nama + NADRA MRC)","Relationship evidence","FRC"],
-          "Sponsor": ["Sponsorship forms","Financial documents"],
-          "Applicant": ["Passport","Police certificates","Medical exam"]
+          "Relationship": ["Marriage certificate","Proof of genuine relationship (photos, communication, visits, joint proof)","Relationship narrative"],
+          "Sponsor (Canada)": ["Status in Canada (citizen/PR)","Financial undertaking forms","Income evidence as required for family size"],
+          "Applicant": ["Passport","Civil documents","Police certificates","Medical exam"],
+          "Pakistan docs": ["NADRA documents as applicable with translations"]
         },
-        financial: { title: "Sponsor Income", main: "LICO may apply depending on situation; many spouse cases have exemptions", note: "Check current IRCC rules.", savings: "", methods: [] },
-        process: { steps: ["Sponsor applies","Applicant biometrics + medical + police","Decision"], fees: "Sponsorship + PR fees" },
-        research: ["canada.ca Family sponsorship"]
+        financial: {
+          title: "Sponsorship undertaking",
+          main: "Canadian sponsor signs an undertaking to support the applicant. Low-income cut-offs can matter for some family classes – follow the IRCC guide for your category.",
+          note: "Relationship genuineness is scrutinised heavily for overseas spouse applications.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Sponsor files sponsorship + principal applicant package as instructed","Biometrics and medicals","Interview if called","PR decision and travel document/visa"],
+          fees: "Sponsorship + PR processing fees (IRCC)"
+        },
+        research: ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/spouse-partner-children.html"]
       },
       student: {
-        title: "Study Permit",
-        summary: { threshold: "Tuition + living funds", english: "Required", grant: "Program duration", vac: "VAC" },
+        title: "Canada Study Permit (Pakistan → Canada)",
+        summary: { threshold: "Tuition + living (IRCC proof-of-funds guidance)", english: "As required by DLI / programme", grant: "Usually aligned to programme length", vac: "VAC biometrics" },
         docs: {
-          "Academic": ["Letter of Acceptance","Academic documents","English/French test"],
-          "Financial": ["Proof of funds for tuition + living"],
-          "Identity": ["Passport","Photos"],
-          "Other": ["Statement of purpose","Biometrics"]
+          "School": ["Letter of Acceptance from a Designated Learning Institution (DLI)","Provincial attestation letter (PAL) if required for your intake/province"],
+          "Identity": ["Passport","Photos","Family information"],
+          "Financial": ["Proof of tuition payment or ability to pay","Proof of living funds per IRCC updated guidance for your study period","Sponsor documents if applicable"],
+          "Study plan": ["Statement of purpose: why Canada, why this programme, ties to Pakistan","Academic transcripts and certificates"],
+          "Other": ["Biometrics","Medical exam if required","Police certificates if required"]
         },
-        financial: { title: "Funds", main: "Tuition + living costs (amount set by IRCC / province)", note: "", savings: "", methods: [] },
-        process: { steps: ["Get acceptance","Apply for study permit","Biometrics","Decision"], fees: "Study permit fee + biometrics" },
-        research: ["IRCC Study permit"]
-      }
+        financial: {
+          title: "Study permit funds",
+          main: "Show tuition plus living costs. IRCC publishes and updates proof-of-funds amounts – verify the current table on Canada.ca before applying.",
+          note: "Using GIC (e.g. for SDS-style pathways where applicable) or bank evidence depends on your stream. Pakistan applicants should follow the instructions in their IRCC account checklist.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Get LoA (+ PAL if required)","Gather funds evidence","Apply online for study permit","Biometrics","Medical if requested","Travel with passport, permit/visa, LoA"],
+          fees: "Study permit fee + biometrics (IRCC)"
+        },
+        research: ["https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html"]
+      },
     }
   },
   australia: {
     name: "Australia", flag: "🇦🇺",
     visas: {
       visitor: {
-        title: "Visitor Visa (Subclass 600)",
-        summary: { threshold: "Sufficient funds", english: "Not required", grant: "Up to 12 months possible", vac: "Online" },
+        title: "Australia Visitor Visa Subclass 600 (Pakistan → Australia)",
+        summary: { threshold: "Funds + genuine temporary stay", english: "As required", grant: "Stream-dependent", vac: "Biometrics if requested" },
         docs: {
-          "Identity": ["Passport","CNIC"],
-          "Purpose": ["Purpose statement","Itinerary","Invitation if any"],
-          "Financial": ["Bank statements","Income proof"],
-          "Ties": ["Employment, property, family evidence"]
+          "Identity": ["Pakistani passport","National ID","Civil documents as listed in ImmiAccount"],
+          "Genuine Temporary Entrant": ["Statement addressing GTE: incentives to return to Pakistan, purpose of trip, compliance history"],
+          "Financial": ["Bank statements","Income/employment evidence","Sponsor evidence if applicable"],
+          "Purpose": ["Itinerary","Invitation if visiting family","Leave letter from employer"]
         },
-        financial: { title: "Funds", main: "Enough for stay and return", note: "", savings: "", methods: [] },
-        process: { steps: ["Apply via ImmiAccount","Biometrics if requested","Decision"], fees: "Check homeaffairs.gov.au" },
-        research: ["homeaffairs.gov.au"]
+        financial: {
+          title: "Visitor funds",
+          main: "Show capacity to fund the visit and leave Australia before permission ends.",
+          note: "Home Affairs assesses genuineness and funds together; weak ties to Pakistan are a common refusal theme.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Create ImmiAccount","Lodge subclass 600 in correct stream","Pay VAC","Provide biometrics/health if requested","Await decision"],
+          fees: "VAC for subclass 600 (see Immi account fee)"
+        },
+        research: ["https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600"]
       },
       student: {
-        title: "Student Visa (Subclass 500)",
-        summary: { threshold: "GTE + funds", english: "Required", grant: "Course duration", vac: "Online" },
+        title: "Australia Student Visa Subclass 500 (Pakistan → Australia)",
+        summary: { threshold: "Tuition + living + travel (GS requirement)", english: "As required by course / Ministerial instrument", grant: "Course length based", vac: "Biometrics/health common" },
         docs: {
-          "Academic": ["CoE","Academic documents","English test"],
-          "Financial": ["Funds for tuition + living + travel","GTE statement"],
-          "Other": ["OSHC","Passport"]
+          "Enrolment": ["Confirmation of Enrolment (CoE)","Written agreement with provider"],
+          "Genuine Student": ["GS statement: reasons for study, course value to career in Pakistan, understanding of stay conditions"],
+          "Financial": ["Evidence of tuition, living and travel costs as required for your circumstances","Sponsor evidence with relationship proof if used"],
+          "English": ["Test results if required"],
+          "Identity & health": ["Passport","Health examination via Bupa/panel physician if requested","Police clearance if requested"]
         },
-        financial: { title: "Funds & GTE", main: "Genuine Temporary Entrant + sufficient funds", note: "Living cost figures published by Home Affairs.", savings: "", methods: [] },
-        process: { steps: ["Get CoE","Prepare GTE & financials","Apply online"], fees: "Student visa fee" },
-        research: ["homeaffairs.gov.au Student visa"]
+        financial: {
+          title: "Student 500 funds",
+          main: "Funds for tuition, living and travel. Amounts and acceptable evidence are set in Home Affairs policy – confirm current requirements in your ImmiAccount checklist.",
+          note: "Genuine Student assessment is central; funds alone do not overcome an unconvincing study pathway.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Accept offer and get CoE","Prepare GS and funds file","Lodge 500 in ImmiAccount","Biometrics and medicals as requested","Grant notification and travel"],
+          fees: "VAC subclass 500 (see Home Affairs)"
+        },
+        research: ["https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500"]
       },
       work: {
-        title: "Temporary Skill Shortage / Work Visa",
-        summary: { threshold: "Sponsorship required", english: "Usually required", grant: "As per stream", vac: "Online" },
+        title: "Australia Temporary Work (e.g. TSS 482) – Pakistan",
+        summary: { threshold: "Sponsored employment", english: "As required", grant: "Stream-dependent", vac: "Biometrics/health" },
         docs: {
-          "Sponsorship": ["Nomination / sponsorship approval"],
-          "Skills": ["Skills assessment if required","Employment references"],
-          "Identity": ["Passport","English test"]
+          "Sponsorship": ["Approved Australian employer sponsorship / nomination"],
+          "Skills": ["Skills assessment if required for occupation","CV and employment references","Licensing if applicable"],
+          "Identity": ["Passport","Police certificates","Health examinations"],
+          "English": ["Test scores if required for stream"]
         },
-        financial: { title: "Sponsorship", main: "Employer nomination is primary", note: "", savings: "", methods: [] },
-        process: { steps: ["Employer nominates","Apply for visa","Decision"], fees: "Varies by stream" },
-        research: ["homeaffairs.gov.au"]
-      }
+        financial: {
+          title: "Sponsored work",
+          main: "Nomination and sponsorship are primary. Personal funds may be relevant for some streams but the job offer drives the visa.",
+          note: "Occupation lists and salary rules change – confirm on Home Affairs for the exact subclass.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Employer sponsorship/nomination","Lodge visa application","Health and biometrics","Decision"],
+          fees: "Per subclass VAC"
+        },
+        research: ["https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing"]
+      },
     }
   },
   uae: {
     name: "United Arab Emirates", flag: "🇦🇪",
     visas: {
       tourist: {
-        title: "Tourist / Visit Visa",
-        summary: { threshold: "As per channel", english: "Not required", grant: "30–90 days typical", vac: "Airline / VFS / sponsor" },
+        title: "UAE Visit / Tourist Visa (Pakistan → UAE)",
+        summary: { threshold: "Per airline/sponsor/e-visa channel rules", english: "Not usually tested", grant: "Depends on visa type (30/60/90 days common)", vac: "Airline, sponsor, or ICP/GDRFA channels" },
         docs: {
-          "Identity": ["Passport (6 months validity)","Photo","CNIC"],
-          "Other": ["Return ticket","Hotel or sponsor documents","Bank statement sometimes"]
+          "Identity": ["Pakistani passport with required validity (often 6 months)","Photo","CNIC"],
+          "Application channel": ["Apply via UAE airline, hotel, authorised agent, or relative sponsor as applicable – channels change"],
+          "Support": ["Return ticket","Hotel booking or host details","Bank statement if requested by processing agent"],
+          "Employment": ["Job letter sometimes requested for certain applications"]
         },
-        financial: { title: "Funds", main: "Often handled via airline or sponsor", note: "Pre-arranged visa usually required for Pakistani nationals.", savings: "", methods: [] },
-        process: { steps: ["Apply via airline, hotel or authorised agency","Receive visa","Travel"], fees: "Varies" },
-        research: ["UAE visa portals / airlines","Confirm current rules before travel"]
+        financial: {
+          title: "Visit funds",
+          main: "Requirements depend on the issuing channel (airline package, sponsor, e-services). Follow the checklist given for your application path.",
+          note: "UAE rules and products change frequently; confirm on official ICP/airline pages before payment.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Choose lawful channel (do not use unverified agents)","Submit passport copy and required forms","Pay fees","Receive visa approval copy before travel","Carry printed visa/status proof at boarding"],
+          fees: "Varies by visa product and channel"
+        },
+        research: ["https://icp.gov.ae/","Official airline visa desks (EK, etc.)"]
       },
       employment: {
-        title: "Employment / Work Visa",
-        summary: { threshold: "Employer sponsored", english: "Not always", grant: "As per contract", vac: "Employer / GDRFA" },
+        title: "UAE Employment Visa (Pakistan → UAE)",
+        summary: { threshold: "Employer sponsorship", english: "N/A primary", grant: "Work permit then residence", vac: "Employer via ICP/GDRFA typing centres" },
         docs: {
-          "From Employer": ["Offer letter","Labour approval"],
-          "Applicant": ["Passport","Attested educational certificates","Photo","Medical after entry"]
+          "Sponsorship": ["UAE employer initiates entry permit / work authorisation"],
+          "Employee": ["Passport","Photo","Attested educational certificates as required for the role","Medical fitness after entry","Emirates ID process"],
+          "Pakistan side": ["Some roles need degree attestation (HEC/MOFA)"]
         },
-        financial: { title: "Sponsorship", main: "Employer sponsors; salary meets emirate minimums", note: "", savings: "", methods: [] },
-        process: { steps: ["Employer approval","Entry permit","Medical & Emirates ID","Residence stamping"], fees: "Mainly employer" },
-        research: ["MOHRE / GDRFA / ICP"]
+        financial: {
+          title: "Employment sponsorship",
+          main: "UAE work residence is employer-driven. Salary is set in the contract; personal savings are secondary to a valid job offer and ministry approvals.",
+          note: "",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Receive offer","Employer processes entry permit","Enter UAE","Medical + Emirates ID + residence stamping"],
+          fees: "Mostly employer-side; confirm contract"
+        },
+        research: ["https://icp.gov.ae/","https://www.gdrfad.gov.ae/"]
       },
       transit: {
-        title: "Transit Visa",
-        summary: { threshold: "As per airline", english: "Not required", grant: "48–96 hours typical", vac: "Airline" },
-        docs: { "Identity": ["Passport","Onward ticket","Photo if required"] },
-        financial: { title: "Funds", main: "Usually not separately required for short transit", note: "", savings: "", methods: [] },
-        process: { steps: ["Apply via airline if needed","Travel"], fees: "Varies" },
-        research: ["Airline and UAE immigration rules"]
-      }
+        title: "UAE Transit Visa (Pakistan → UAE)",
+        summary: { threshold: "Per airline product", english: "N/A", grant: "Short transit window", vac: "Airline / airport channel" },
+        docs: {
+          "Travel": ["Confirmed onward ticket within allowed transit time","Passport valid as required by airline"],
+          "Visa product": ["Transit visa via airline when required – not all connections need one"],
+          "Support": ["Hotel if overnight transit product requires it"]
+        },
+        financial: {
+          title: "Transit",
+          main: "Usually airline product-driven rather than a large personal funds test.",
+          note: "Confirm with the operating airline before travel.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Check if layover requires UAE transit visa","Obtain via airline if needed","Travel with printed approval"],
+          fees: "Per airline product"
+        },
+        research: ["Airline transit desks","https://icp.gov.ae/"]
+      },
     }
   },
   saudi: {
     name: "Saudi Arabia", flag: "🇸🇦",
     visas: {
       visit: {
-        title: "Visit / Tourist Visa",
-        summary: { threshold: "As per portal", english: "Not required", grant: "Varies", vac: "Online / Enjaz" },
+        title: "Saudi Visit / Tourist Visa (Pakistan → Saudi Arabia)",
+        summary: { threshold: "Per Nusuk / approved channel rules", english: "N/A", grant: "Product-dependent", vac: "Enjaz / approved platforms / embassy channels" },
         docs: {
-          "Identity": ["Passport","Photo","CNIC"],
-          "Other": ["Application via official portal","Supporting documents as requested"]
+          "Identity": ["Pakistani passport with required validity","Photo","CNIC"],
+          "Application": ["Apply via official Saudi platforms (e.g. Nusuk tourist products) or authorised channel – avoid unofficial agents"],
+          "Support": ["Return ticket","Hotel or host details as required by product","Bank statement if the platform requests"],
+          "Other": ["Vaccination / health requirements if published for entry"]
         },
-        financial: { title: "Funds", main: "As required by visa category", note: "", savings: "", methods: [] },
-        process: { steps: ["Apply via official Saudi portal or authorised channel","Pay fee","Receive e-visa or sticker"], fees: "Varies" },
-        research: ["visitsaudi.com / Ministry portals"]
+        financial: {
+          title: "Saudi visit funds",
+          main: "Follow the exact checklist of the official visa product you select. Requirements differ between tourist e-visa style products and sponsored visits.",
+          note: "Always use official Ministry of Foreign Affairs / Nusuk / accredited centre instructions.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Choose official visa product","Submit application and pay fees","Receive electronic/ stamped visa as applicable","Travel with printed confirmation"],
+          fees: "Per product"
+        },
+        research: ["https://www.visasaudi.com/","Official Enjaz / MOFA notices for Pakistan"]
       },
       work: {
-        title: "Work / Employment Visa",
-        summary: { threshold: "Employer sponsored", english: "Not always", grant: "As per contract", vac: "Employer / Enjaz" },
+        title: "Saudi Work Visa / Employment (Pakistan → Saudi Arabia)",
+        summary: { threshold: "Employer sponsorship (block visa / qiwa processes)", english: "N/A primary", grant: "Linked to work permit / iqama pathway", vac: "Enjaz after employer authorisation" },
         docs: {
-          "Employer": ["Block visa / approval","Contract"],
-          "Applicant": ["Passport","Attested certificates","Medical","Photo"]
+          "Sponsorship": ["Saudi employer must complete labour/visa authorisation (Qiwa/MHRSD processes as applicable)"],
+          "Employee": ["Passport","Photos","Educational certificates often attested (HEC/MOFA/Saudi cultural)","Medical fitness from approved clinics","Police certificate if required"],
+          "Application": ["Enjaz/visa application after visa number issued"]
         },
-        financial: { title: "Sponsorship", main: "Employer sponsorship required", note: "", savings: "", methods: [] },
-        process: { steps: ["Employer approval","Applicant applies","Medical & entry"], fees: "Mainly employer" },
-        research: ["Qiwa / Enjaz / HR Ministry"]
+        financial: {
+          title: "Employment sponsorship",
+          main: "Employer sponsorship drives the work visa. Personal bank balance is not the primary test; contract and authorised visa number are.",
+          note: "Attestation chains for degrees are frequently required – plan time for HEC and MOFA.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Employer obtains authorisation","Complete medicals and attestations","Apply via Enjaz/authorised centre","Travel and complete iqama formalities in KSA"],
+          fees: "Employer/employee split per contract and regulations"
+        },
+        research: ["Qiwa / MHRSD employer guidance","Saudi visa centres Pakistan"]
       },
       umrah: {
-        title: "Umrah Visa",
-        summary: { threshold: "As per operator", english: "Not required", grant: "Short stay", vac: "Authorised operator" },
+        title: "Saudi Umrah Visa (Pakistan → Saudi Arabia)",
+        summary: { threshold: "Per Nusuk / authorised package", english: "N/A", grant: "Umrah validity window", vac: "Nusuk / authorised agents" },
         docs: {
-          "Identity": ["Passport","Photo","CNIC"],
-          "Other": ["Application via authorised Umrah operator","Vaccination as required"]
+          "Identity": ["Pakistani passport with required validity","Photo","CNIC"],
+          "Umrah": ["Apply via official Nusuk platform or authorised licensed agent only","Vaccination requirements as published for the season"],
+          "Travel": ["Return ticket and hotel/package as required"]
         },
-        financial: { title: "Package", main: "Usually included in operator package", note: "", savings: "", methods: [] },
-        process: { steps: ["Book via authorised operator","Receive visa","Travel"], fees: "Package dependent" },
-        research: ["Official Umrah portals / Ministry of Hajj"]
-      }
+        financial: {
+          title: "Umrah package",
+          main: "Usually package-based through official channels.",
+          note: "Requirements change by season – follow Nusuk current instructions only.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Official Nusuk/authorised application","Pay fees and obtain approval","Travel for Umrah only within permitted activities"],
+          fees: "Per official product"
+        },
+        research: ["https://www.nusuk.sa/","Official Saudi Umrah guidance"]
+      },
     }
   },
   turkey: {
@@ -466,29 +1653,50 @@ const DB = {
     name: "Malaysia", flag: "🇲🇾",
     visas: {
       tourist: {
-        title: "Tourist / Social Visit Pass",
-        summary: { threshold: "Sufficient funds", english: "Not required", grant: "Usually 30–90 days", vac: "Embassy / online" },
+        title: "Malaysia Social Visit / Tourist (Pakistan → Malaysia)",
+        summary: { threshold: "Funds + return ticket practice", english: "N/A", grant: "As stamped/issued", vac: "Embassy/consulate or eVISA where eligible" },
         docs: {
-          "Identity": ["Passport (6 months)","Photo","CNIC"],
-          "Purpose": ["Return ticket","Hotel booking","Bank statement","Purpose letter"]
+          "Identity": ["Passport with validity","Photo","CNIC"],
+          "Travel": ["Return/onward ticket","Hotel bookings"],
+          "Financial": ["Bank statements showing funds for stay"],
+          "Ties": ["Employment letter","Cover letter purpose of visit"],
+          "Other": ["Yellow fever certificate only if arriving from/via risk countries as per rules"]
         },
-        financial: { title: "Funds", main: "Enough for stay and return", note: "", savings: "", methods: [] },
-        process: { steps: ["Check current requirements","Apply if pre-visa needed"], fees: "Varies" },
-        research: ["Malaysian Immigration / Embassy","Rules can change"]
+        financial: {
+          title: "Malaysia visit funds",
+          main: "Immigration officers and visa officers expect evidence you can fund the stay and depart on time. Carry statements and return tickets.",
+          note: "eVISA vs sticker requirements depend on current Malaysian regulations for Pakistani nationals – confirm before travel.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Check if eVISA or embassy application applies","Submit required documents","Pay fees","Travel with printouts"],
+          fees: "Per Immigration Malaysia / mission"
+        },
+        research: ["https://www.imi.gov.my/","Malaysian mission Pakistan notices"]
       },
       student: {
-        title: "Student Visa / Pass",
-        summary: { threshold: "Institution + funds", english: "May be required", grant: "Course duration", vac: "EMGS / Immigration" },
+        title: "Malaysia Student Pass (Pakistan → Malaysia)",
+        summary: { threshold: "Tuition + living as required by EMGS / institution", english: "Programme requirement", grant: "Linked to institution", vac: "EMGS + embassy processes" },
         docs: {
-          "Academic": ["Offer letter / acceptance","Academic documents"],
-          "Financial": ["Proof of funds"],
-          "Identity": ["Passport","Photos"],
-          "Other": ["Medical as required"]
+          "Institution": ["Offer letter from approved Malaysian institution","EMGS application / VAL (Visa Approval Letter) process"],
+          "Identity": ["Passport","Photos","Academic transcripts","Medical exam as required by EMGS"],
+          "Financial": ["Proof of funds/tuition as required for VAL"],
+          "Other": ["Personal bond / medical insurance as directed by college"]
         },
-        financial: { title: "Funds", main: "As required by institution / EMGS", note: "", savings: "", methods: [] },
-        process: { steps: ["Get offer","Apply via EMGS / Immigration process"], fees: "Varies" },
-        research: ["EMGS + Malaysian Immigration"]
-      }
+        financial: {
+          title: "Malaysia student funds",
+          main: "Meet EMGS and institution requirements for tuition and living support for VAL issuance.",
+          note: "Do not rely on informal agents; track VAL status on EMGS.",
+          savings: "",
+          methods: []
+        },
+        process: {
+          steps: ["Accept offer and start EMGS","Medicals and documents","VAL issued","Single-entry visa / entry","Student pass endorsement in Malaysia"],
+          fees: "EMGS + visa fees"
+        },
+        research: ["https://educationmalaysia.gov.my/","EMGS"]
+      },
     }
   },
   schengen: {
