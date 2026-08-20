@@ -1,9 +1,9 @@
 {
-  "scrapedAt": "2026-08-19T03:33:51.076Z",
-  "finishedAt": "2026-08-19T03:36:07.549Z",
+  "scrapedAt": "2026-08-20T03:33:37.191Z",
+  "finishedAt": "2026-08-20T03:35:59.659Z",
   "sourceCount": 44,
-  "successCount": 31,
-  "failCount": 13,
+  "successCount": 32,
+  "failCount": 12,
   "puppeteerUsed": false,
   "flags": {
     "uk_income_29000_seen": false,
@@ -22,7 +22,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:33:52.212Z",
+      "fetchedAt": "2026-08-20T03:33:38.865Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -49,7 +49,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:33:53.358Z",
+      "fetchedAt": "2026-08-20T03:33:40.638Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -78,7 +78,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:33:54.489Z",
+      "fetchedAt": "2026-08-20T03:33:41.965Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -105,7 +105,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:33:55.689Z",
+      "fetchedAt": "2026-08-20T03:33:43.139Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -132,7 +132,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:33:56.806Z",
+      "fetchedAt": "2026-08-20T03:33:44.303Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -159,7 +159,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:33:57.991Z",
+      "fetchedAt": "2026-08-20T03:33:46.153Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -188,7 +188,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:33:59.430Z",
+      "fetchedAt": "2026-08-20T03:33:47.857Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -276,7 +276,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:34:39.968Z",
+      "fetchedAt": "2026-08-20T03:34:29.319Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -300,7 +300,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:34:41.775Z",
+      "fetchedAt": "2026-08-20T03:34:31.687Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -357,7 +357,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:34:46.105Z",
+      "fetchedAt": "2026-08-20T03:34:36.422Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -414,7 +414,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:34:49.625Z",
+      "fetchedAt": "2026-08-20T03:34:40.451Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -439,7 +439,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:34:50.746Z",
+      "fetchedAt": "2026-08-20T03:34:41.743Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -464,7 +464,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:34:52.525Z",
+      "fetchedAt": "2026-08-20T03:34:43.713Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -489,7 +489,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:34:55.515Z",
+      "fetchedAt": "2026-08-20T03:34:46.502Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -514,7 +514,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:34:57.476Z",
+      "fetchedAt": "2026-08-20T03:34:49.331Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -539,7 +539,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:35:02.453Z",
+      "fetchedAt": "2026-08-20T03:34:52.608Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -581,7 +581,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:35:05.127Z",
+      "fetchedAt": "2026-08-20T03:34:55.665Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -621,7 +621,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:35:18.909Z",
+      "fetchedAt": "2026-08-20T03:35:10.369Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -645,7 +645,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:35:22.884Z",
+      "fetchedAt": "2026-08-20T03:35:13.747Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -659,7 +659,7 @@
         ]
       },
       "error": null,
-      "textLength": 8984
+      "textLength": 8985
     },
     {
       "id": "portal_de",
@@ -671,7 +671,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:35:24.490Z",
+      "fetchedAt": "2026-08-20T03:35:15.620Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -712,7 +712,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:35:30.201Z",
+      "fetchedAt": "2026-08-20T03:35:21.696Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -755,7 +755,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:35:33.934Z",
+      "fetchedAt": "2026-08-20T03:35:25.666Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -779,7 +779,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:35:35.065Z",
+      "fetchedAt": "2026-08-20T03:35:28.293Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -805,7 +805,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:35:40.166Z",
+      "fetchedAt": "2026-08-20T03:35:34.140Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -817,7 +817,7 @@
         "snippets": []
       },
       "error": null,
-      "textLength": 12013
+      "textLength": 12048
     },
     {
       "id": "portal_tr",
@@ -829,7 +829,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:35:48.494Z",
+      "fetchedAt": "2026-08-20T03:35:39.582Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -853,7 +853,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:35:50.075Z",
+      "fetchedAt": "2026-08-20T03:35:41.285Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -877,7 +877,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:35:52.572Z",
+      "fetchedAt": "2026-08-20T03:35:44.092Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -889,7 +889,7 @@
         "snippets": []
       },
       "error": null,
-      "textLength": 3030
+      "textLength": 3509
     },
     {
       "id": "portal_br",
@@ -901,7 +901,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:35:54.796Z",
+      "fetchedAt": "2026-08-20T03:35:47.043Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -913,7 +913,7 @@
         "snippets": []
       },
       "error": null,
-      "textLength": 11451
+      "textLength": 12492
     },
     {
       "id": "portal_za",
@@ -925,7 +925,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:35:57.952Z",
+      "fetchedAt": "2026-08-20T03:35:50.559Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -939,7 +939,7 @@
         ]
       },
       "error": null,
-      "textLength": 8717
+      "textLength": 8708
     },
     {
       "id": "portal_ng",
@@ -949,13 +949,24 @@
       "tags": [
         "official"
       ],
-      "ok": false,
-      "method": null,
-      "fetchedAt": null,
-      "status": null,
-      "signals": null,
-      "error": "page.waitForTimeout is not a function",
-      "textLength": 0
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-08-20T03:35:55.278Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": true,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": [
+          "vention Travel Document ECOWAS National Biometric Identity Card CERPAC e-CERPAC Landing and Exit Card Citizenship and Business (C&#038;B) Temporary work Permit (TWP) Media Hub Important Updates Press Release Event Galler",
+          "ing and Exit Cards are mandatory travel documents required of all passengers entering or departing Nigeria. These cards must be completed upon arrival at or departure from Nigerian borders and serve as a critical instrum"
+        ]
+      },
+      "error": null,
+      "textLength": 5537
     },
     {
       "id": "portal_ke",
@@ -967,7 +978,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:36:05.377Z",
+      "fetchedAt": "2026-08-20T03:35:57.380Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -994,7 +1005,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-08-19T03:36:06.452Z",
+      "fetchedAt": "2026-08-20T03:35:58.584Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
