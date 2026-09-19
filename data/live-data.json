@@ -1,6 +1,6 @@
 {
-  "scrapedAt": "2026-09-18T05:36:12.107Z",
-  "finishedAt": "2026-09-18T05:38:24.873Z",
+  "scrapedAt": "2026-09-19T05:31:59.840Z",
+  "finishedAt": "2026-09-19T05:34:02.793Z",
   "sourceCount": 44,
   "successCount": 31,
   "failCount": 13,
@@ -22,7 +22,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:36:13.229Z",
+      "fetchedAt": "2026-09-19T05:32:00.301Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -49,7 +49,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:36:14.977Z",
+      "fetchedAt": "2026-09-19T05:32:01.529Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -78,7 +78,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:36:16.747Z",
+      "fetchedAt": "2026-09-19T05:32:02.655Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -105,7 +105,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:36:18.432Z",
+      "fetchedAt": "2026-09-19T05:32:03.772Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -132,7 +132,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:36:19.976Z",
+      "fetchedAt": "2026-09-19T05:32:04.903Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -159,7 +159,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:36:21.690Z",
+      "fetchedAt": "2026-09-19T05:32:06.161Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -188,7 +188,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:36:23.272Z",
+      "fetchedAt": "2026-09-19T05:32:07.543Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -276,7 +276,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:37:04.542Z",
+      "fetchedAt": "2026-09-19T05:32:48.106Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -300,7 +300,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:37:06.576Z",
+      "fetchedAt": "2026-09-19T05:32:50.038Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -357,7 +357,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:37:11.058Z",
+      "fetchedAt": "2026-09-19T05:32:54.348Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -414,7 +414,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:37:14.832Z",
+      "fetchedAt": "2026-09-19T05:32:57.810Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -439,7 +439,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:37:16.039Z",
+      "fetchedAt": "2026-09-19T05:32:58.945Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -464,7 +464,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:37:17.997Z",
+      "fetchedAt": "2026-09-19T05:33:00.667Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -489,7 +489,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:37:20.838Z",
+      "fetchedAt": "2026-09-19T05:33:03.817Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -514,7 +514,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:37:23.486Z",
+      "fetchedAt": "2026-09-19T05:33:06.164Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -539,7 +539,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:37:27.371Z",
+      "fetchedAt": "2026-09-19T05:33:09.538Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -581,7 +581,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:37:30.416Z",
+      "fetchedAt": "2026-09-19T05:33:12.274Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -621,7 +621,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:37:44.967Z",
+      "fetchedAt": "2026-09-19T05:33:26.143Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -645,7 +645,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:37:47.922Z",
+      "fetchedAt": "2026-09-19T05:33:28.520Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -671,7 +671,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:37:49.820Z",
+      "fetchedAt": "2026-09-19T05:33:30.239Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -712,7 +712,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:37:55.915Z",
+      "fetchedAt": "2026-09-19T05:33:35.147Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -755,7 +755,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:37:59.916Z",
+      "fetchedAt": "2026-09-19T05:33:38.963Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -779,7 +779,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:38:02.501Z",
+      "fetchedAt": "2026-09-19T05:33:41.017Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -805,7 +805,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:38:06.186Z",
+      "fetchedAt": "2026-09-19T05:33:45.752Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -845,7 +845,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:38:09.039Z",
+      "fetchedAt": "2026-09-19T05:33:48.456Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -869,7 +869,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:38:11.856Z",
+      "fetchedAt": "2026-09-19T05:33:51.121Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -893,7 +893,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:38:14.457Z",
+      "fetchedAt": "2026-09-19T05:33:53.408Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -917,7 +917,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:38:17.479Z",
+      "fetchedAt": "2026-09-19T05:33:56.799Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -943,7 +943,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:38:20.314Z",
+      "fetchedAt": "2026-09-19T05:33:58.660Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -970,7 +970,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:38:22.169Z",
+      "fetchedAt": "2026-09-19T05:34:00.574Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -997,7 +997,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-09-18T05:38:23.810Z",
+      "fetchedAt": "2026-09-19T05:34:01.717Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
