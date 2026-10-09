@@ -1,6 +1,6 @@
 {
-  "scrapedAt": "2026-10-08T07:02:41.691Z",
-  "finishedAt": "2026-10-08T07:05:31.010Z",
+  "scrapedAt": "2026-10-09T07:11:20.999Z",
+  "finishedAt": "2026-10-09T07:13:31.853Z",
   "sourceCount": 44,
   "successCount": 30,
   "failCount": 14,
@@ -22,7 +22,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:02:42.788Z",
+      "fetchedAt": "2026-10-09T07:11:22.132Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -49,7 +49,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:02:44.705Z",
+      "fetchedAt": "2026-10-09T07:11:23.366Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -78,7 +78,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:02:46.038Z",
+      "fetchedAt": "2026-10-09T07:11:25.019Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -105,7 +105,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:02:47.211Z",
+      "fetchedAt": "2026-10-09T07:11:26.585Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -116,11 +116,11 @@
         "fee_candidates": [],
         "snippets": [
           "Pakistan: tuberculosis test clinics for a UK visa - GOV.UK Cookies on GOV.UK We use some essential cookies to make this website work. We’d like to set additional cookies to understand how yo",
-          "t published. Get emails about this page Documents Tuberculosis testing in Pakistan HTML Details You’ll need to have a tuberculosis ( TB ) test if you’re coming to the UK for 6 months or more and both of the following app"
+          "all updates Get emails about this page Documents Tuberculosis testing in Pakistan HTML Details You’ll need to have a tuberculosis ( TB ) test if you’re coming to the UK for 6 months or more and both of the following app"
         ]
       },
       "error": null,
-      "textLength": 5226
+      "textLength": 5314
     },
     {
       "id": "uk_fees",
@@ -132,7 +132,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:02:48.386Z",
+      "fetchedAt": "2026-10-09T07:11:27.708Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -159,7 +159,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:02:49.625Z",
+      "fetchedAt": "2026-10-09T07:11:29.184Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -188,7 +188,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:02:51.364Z",
+      "fetchedAt": "2026-10-09T07:11:30.604Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -276,7 +276,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:03:31.685Z",
+      "fetchedAt": "2026-10-09T07:12:11.407Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -300,7 +300,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:03:33.385Z",
+      "fetchedAt": "2026-10-09T07:12:13.468Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -357,7 +357,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:03:38.295Z",
+      "fetchedAt": "2026-10-09T07:12:18.465Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -414,7 +414,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:03:42.014Z",
+      "fetchedAt": "2026-10-09T07:12:22.099Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -426,7 +426,7 @@
         "snippets": []
       },
       "error": null,
-      "textLength": 3590
+      "textLength": 3616
     },
     {
       "id": "study_studies_overseas",
@@ -439,7 +439,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:03:43.168Z",
+      "fetchedAt": "2026-10-09T07:12:23.209Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -464,7 +464,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:03:45.266Z",
+      "fetchedAt": "2026-10-09T07:12:25.000Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -489,7 +489,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:03:47.885Z",
+      "fetchedAt": "2026-10-09T07:12:28.200Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -514,7 +514,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:03:52.506Z",
+      "fetchedAt": "2026-10-09T07:12:30.564Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -539,7 +539,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:03:55.267Z",
+      "fetchedAt": "2026-10-09T07:12:33.845Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -581,7 +581,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:03:57.591Z",
+      "fetchedAt": "2026-10-09T07:12:36.239Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -621,7 +621,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:04:11.557Z",
+      "fetchedAt": "2026-10-09T07:12:50.841Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -645,7 +645,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:04:13.913Z",
+      "fetchedAt": "2026-10-09T07:12:54.631Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -671,7 +671,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:04:16.021Z",
+      "fetchedAt": "2026-10-09T07:12:56.416Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -712,7 +712,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:04:20.185Z",
+      "fetchedAt": "2026-10-09T07:13:00.418Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -727,7 +727,7 @@
         ]
       },
       "error": null,
-      "textLength": 27937
+      "textLength": 27935
     },
     {
       "id": "portal_jp",
@@ -755,7 +755,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:04:53.730Z",
+      "fetchedAt": "2026-10-09T07:13:04.271Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -779,7 +779,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:04:56.020Z",
+      "fetchedAt": "2026-10-09T07:13:06.384Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -805,7 +805,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:05:01.961Z",
+      "fetchedAt": "2026-10-09T07:13:11.506Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -845,7 +845,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:05:04.801Z",
+      "fetchedAt": "2026-10-09T07:13:14.188Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -857,7 +857,7 @@
         "snippets": []
       },
       "error": null,
-      "textLength": 3251
+      "textLength": 3293
     },
     {
       "id": "portal_in",
@@ -869,7 +869,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:05:07.499Z",
+      "fetchedAt": "2026-10-09T07:13:17.030Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -893,7 +893,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:05:10.311Z",
+      "fetchedAt": "2026-10-09T07:13:19.371Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -917,7 +917,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:05:16.241Z",
+      "fetchedAt": "2026-10-09T07:13:21.964Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -931,7 +931,7 @@
         ]
       },
       "error": null,
-      "textLength": 8830
+      "textLength": 8813
     },
     {
       "id": "portal_ng",
@@ -959,7 +959,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:05:27.948Z",
+      "fetchedAt": "2026-10-09T07:13:29.592Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -986,7 +986,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-08T07:05:29.816Z",
+      "fetchedAt": "2026-10-09T07:13:30.738Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
