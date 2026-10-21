@@ -1,9 +1,9 @@
 {
-  "scrapedAt": "2026-10-20T05:42:57.770Z",
-  "finishedAt": "2026-10-20T05:45:11.056Z",
+  "scrapedAt": "2026-10-21T05:46:30.474Z",
+  "finishedAt": "2026-10-21T05:49:49.548Z",
   "sourceCount": 44,
-  "successCount": 31,
-  "failCount": 13,
+  "successCount": 30,
+  "failCount": 14,
   "puppeteerUsed": false,
   "flags": {
     "uk_income_29000_seen": false,
@@ -22,7 +22,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:42:59.003Z",
+      "fetchedAt": "2026-10-21T05:46:31.709Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -49,7 +49,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:43:00.895Z",
+      "fetchedAt": "2026-10-21T05:46:33.008Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -78,7 +78,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:43:02.217Z",
+      "fetchedAt": "2026-10-21T05:46:34.862Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -105,7 +105,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:43:03.960Z",
+      "fetchedAt": "2026-10-21T05:46:36.511Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -132,7 +132,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:43:05.125Z",
+      "fetchedAt": "2026-10-21T05:46:37.792Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -159,7 +159,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:43:06.474Z",
+      "fetchedAt": "2026-10-21T05:46:39.757Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -188,7 +188,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:43:08.019Z",
+      "fetchedAt": "2026-10-21T05:46:41.293Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -276,7 +276,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:43:49.460Z",
+      "fetchedAt": "2026-10-21T05:47:22.511Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -300,7 +300,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:43:51.146Z",
+      "fetchedAt": "2026-10-21T05:47:24.220Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -357,7 +357,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:43:56.149Z",
+      "fetchedAt": "2026-10-21T05:47:29.580Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -414,7 +414,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:43:59.986Z",
+      "fetchedAt": "2026-10-21T05:47:33.205Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -439,7 +439,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:44:01.197Z",
+      "fetchedAt": "2026-10-21T05:47:34.416Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -464,7 +464,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:44:03.079Z",
+      "fetchedAt": "2026-10-21T05:47:36.284Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -489,7 +489,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:44:05.794Z",
+      "fetchedAt": "2026-10-21T05:47:39.078Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -514,7 +514,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:44:08.608Z",
+      "fetchedAt": "2026-10-21T05:47:41.678Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -539,7 +539,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:44:09.749Z",
+      "fetchedAt": "2026-10-21T05:47:45.099Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -581,7 +581,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:44:12.240Z",
+      "fetchedAt": "2026-10-21T05:47:47.704Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -621,7 +621,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:44:26.557Z",
+      "fetchedAt": "2026-10-21T05:48:02.463Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -645,7 +645,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:44:28.424Z",
+      "fetchedAt": "2026-10-21T05:48:04.697Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -671,7 +671,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:44:30.184Z",
+      "fetchedAt": "2026-10-21T05:48:06.715Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -712,7 +712,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:44:34.013Z",
+      "fetchedAt": "2026-10-21T05:48:10.849Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -755,7 +755,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:44:38.879Z",
+      "fetchedAt": "2026-10-21T05:48:14.821Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -779,7 +779,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:44:40.150Z",
+      "fetchedAt": "2026-10-21T05:48:17.196Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -805,7 +805,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:44:45.028Z",
+      "fetchedAt": "2026-10-21T05:48:20.988Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -817,7 +817,7 @@
         "snippets": []
       },
       "error": null,
-      "textLength": 11876
+      "textLength": 11880
     },
     {
       "id": "portal_tr",
@@ -829,7 +829,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:44:47.181Z",
+      "fetchedAt": "2026-10-21T05:48:23.186Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -853,7 +853,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:44:48.477Z",
+      "fetchedAt": "2026-10-21T05:48:24.562Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -877,7 +877,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:44:51.956Z",
+      "fetchedAt": "2026-10-21T05:48:27.526Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -899,21 +899,13 @@
       "tags": [
         "official"
       ],
-      "ok": true,
-      "method": "http",
-      "fetchedAt": "2026-10-20T05:44:54.705Z",
-      "status": 200,
-      "signals": {
-        "mentions_29000": false,
-        "mentions_income_threshold": false,
-        "mentions_tb": false,
-        "mentions_biometric": false,
-        "mentions_ihs": false,
-        "fee_candidates": [],
-        "snippets": []
-      },
-      "error": null,
-      "textLength": 14087
+      "ok": false,
+      "method": null,
+      "fetchedAt": null,
+      "status": null,
+      "signals": null,
+      "error": "read ECONNRESET",
+      "textLength": 0
     },
     {
       "id": "portal_za",
@@ -923,23 +915,13 @@
       "tags": [
         "official"
       ],
-      "ok": true,
-      "method": "http",
-      "fetchedAt": "2026-10-20T05:44:58.017Z",
-      "status": 200,
-      "signals": {
-        "mentions_29000": false,
-        "mentions_income_threshold": false,
-        "mentions_tb": false,
-        "mentions_biometric": false,
-        "mentions_ihs": false,
-        "fee_candidates": [],
-        "snippets": [
-          "ic Services Birth Certificates Identity Documents Marriages Death Registration Adoption Amendments Travel Documents Parental Consent Affidavit ZA Qualified Imams ABIS APPLY ONLINE - Passport & Smart ID List of DHA office"
-        ]
-      },
-      "error": null,
-      "textLength": 8806
+      "ok": false,
+      "method": null,
+      "fetchedAt": null,
+      "status": null,
+      "signals": null,
+      "error": "Navigation timeout of 45000 ms exceeded",
+      "textLength": 0
     },
     {
       "id": "portal_ng",
@@ -949,13 +931,24 @@
       "tags": [
         "official"
       ],
-      "ok": false,
-      "method": null,
-      "fetchedAt": null,
-      "status": null,
-      "signals": null,
-      "error": "page.waitForTimeout is not a function",
-      "textLength": 0
+      "ok": true,
+      "method": "http",
+      "fetchedAt": "2026-10-21T05:49:44.482Z",
+      "status": 200,
+      "signals": {
+        "mentions_29000": false,
+        "mentions_income_threshold": false,
+        "mentions_tb": false,
+        "mentions_biometric": true,
+        "mentions_ihs": false,
+        "fee_candidates": [],
+        "snippets": [
+          "vention Travel Document ECOWAS National Biometric Identity Card CERPAC e-CERPAC Landing and Exit Card Citizenship and Business (C&#038;B) Temporary work Permit (TWP) Media Hub Important Updates Press Release Event Galler",
+          "ing and Exit Cards are mandatory travel documents required of all passengers entering or departing Nigeria. These cards must be completed upon arrival at or departure from Nigerian borders and serve as a critical instrum"
+        ]
+      },
+      "error": null,
+      "textLength": 5474
     },
     {
       "id": "portal_ke",
@@ -967,7 +960,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:45:08.297Z",
+      "fetchedAt": "2026-10-21T05:49:46.792Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -994,7 +987,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-10-20T05:45:09.996Z",
+      "fetchedAt": "2026-10-21T05:49:48.480Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
