@@ -1,6 +1,6 @@
 {
-  "scrapedAt": "2026-11-16T07:42:27.036Z",
-  "finishedAt": "2026-11-16T07:44:34.047Z",
+  "scrapedAt": "2026-11-17T08:51:56.878Z",
+  "finishedAt": "2026-11-17T08:54:07.632Z",
   "sourceCount": 44,
   "successCount": 32,
   "failCount": 12,
@@ -22,7 +22,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:42:28.033Z",
+      "fetchedAt": "2026-11-17T08:51:57.405Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -49,7 +49,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:42:29.242Z",
+      "fetchedAt": "2026-11-17T08:51:58.532Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -62,11 +62,11 @@
         ],
         "snippets": [
           "he English language Check if you need a tuberculosis (TB) test If you&#39;re doing a masters degree or above, you may need to apply for the Academic Technology Approval Scheme (ATAS) certificate. Check if you need to app",
-          "rse Money you need Knowledge of English Documents you'll need to apply Apply online Your partner and children Extend your visa Switch to this visa Overview You can apply for a Student visa to study in the UK if you’re 16"
+          "rse Money you need Knowledge of English Documents you&#39;ll need to apply Apply online Your partner and children Extend your visa Switch to this visa Overview You can apply for a Student visa to study in the UK if you’r"
         ]
       },
       "error": null,
-      "textLength": 9325
+      "textLength": 9329
     },
     {
       "id": "uk_visitor",
@@ -78,7 +78,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:42:30.454Z",
+      "fetchedAt": "2026-11-17T08:51:59.917Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -93,7 +93,7 @@
         "snippets": []
       },
       "error": null,
-      "textLength": 7578
+      "textLength": 7582
     },
     {
       "id": "uk_tb_pakistan",
@@ -105,7 +105,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:42:31.661Z",
+      "fetchedAt": "2026-11-17T08:52:01.039Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -132,7 +132,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:42:33.219Z",
+      "fetchedAt": "2026-11-17T08:52:02.045Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -159,7 +159,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:42:34.965Z",
+      "fetchedAt": "2026-11-17T08:52:03.376Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -188,7 +188,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:42:36.298Z",
+      "fetchedAt": "2026-11-17T08:52:04.727Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -276,7 +276,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:43:16.973Z",
+      "fetchedAt": "2026-11-17T08:52:45.412Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -300,7 +300,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:43:18.572Z",
+      "fetchedAt": "2026-11-17T08:52:47.874Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -357,7 +357,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:43:23.629Z",
+      "fetchedAt": "2026-11-17T08:52:53.127Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -414,7 +414,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:43:27.016Z",
+      "fetchedAt": "2026-11-17T08:52:56.504Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -439,7 +439,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:43:28.122Z",
+      "fetchedAt": "2026-11-17T08:52:57.611Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -464,7 +464,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:43:29.906Z",
+      "fetchedAt": "2026-11-17T08:52:59.276Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -489,7 +489,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:43:32.808Z",
+      "fetchedAt": "2026-11-17T08:53:02.156Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -514,7 +514,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:43:35.503Z",
+      "fetchedAt": "2026-11-17T08:53:04.473Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -539,7 +539,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:43:38.448Z",
+      "fetchedAt": "2026-11-17T08:53:07.366Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -581,7 +581,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:43:40.749Z",
+      "fetchedAt": "2026-11-17T08:53:09.803Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -621,7 +621,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:43:54.779Z",
+      "fetchedAt": "2026-11-17T08:53:23.911Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -645,7 +645,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:43:59.402Z",
+      "fetchedAt": "2026-11-17T08:53:26.593Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -659,7 +659,7 @@
         ]
       },
       "error": null,
-      "textLength": 8474
+      "textLength": 8307
     },
     {
       "id": "portal_de",
@@ -671,7 +671,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:44:01.061Z",
+      "fetchedAt": "2026-11-17T08:53:28.263Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -712,7 +712,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:44:05.162Z",
+      "fetchedAt": "2026-11-17T08:53:31.946Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -723,11 +723,11 @@
         "fee_candidates": [],
         "snippets": [
           "s on the platform, except for providing biometrics (when required) a digital visa will replace the visa sticker. Which countries' nationals need a visa to enter the Schengen area? Applying for a Schengen visa Legal docum",
-          "stem (EES) See all Travel and residence documents Visa Information System (VIS) Key documents and legislation on VIS See all Visa policy Applying for a Schengen visa Legal documents related to Schengen visas Short-stay v"
+          "stem (EES) See all Travel and residence documents Visa Information System (VIS) Key documents and legislation on VIS See all Visa policy Applying for a Schengen visa Legal documents related to Schengen visas Statistics o"
         ]
       },
       "error": null,
-      "textLength": 26060
+      "textLength": 26045
     },
     {
       "id": "portal_jp",
@@ -755,7 +755,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:44:09.213Z",
+      "fetchedAt": "2026-11-17T08:53:35.915Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -779,7 +779,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:44:10.304Z",
+      "fetchedAt": "2026-11-17T08:53:37.019Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -791,7 +791,7 @@
         "snippets": []
       },
       "error": null,
-      "textLength": 32382
+      "textLength": 31487
     },
     {
       "id": "portal_ae",
@@ -803,7 +803,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:44:15.169Z",
+      "fetchedAt": "2026-11-17T08:53:41.743Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -827,7 +827,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:44:17.245Z",
+      "fetchedAt": "2026-11-17T08:53:44.084Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -851,7 +851,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:44:18.611Z",
+      "fetchedAt": "2026-11-17T08:53:45.246Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -875,7 +875,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:44:21.190Z",
+      "fetchedAt": "2026-11-17T08:53:47.617Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -899,7 +899,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:44:23.477Z",
+      "fetchedAt": "2026-11-17T08:53:50.072Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -911,7 +911,7 @@
         "snippets": []
       },
       "error": null,
-      "textLength": 20168
+      "textLength": 20080
     },
     {
       "id": "portal_za",
@@ -923,7 +923,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:44:27.492Z",
+      "fetchedAt": "2026-11-17T08:54:01.066Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -949,7 +949,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:44:29.975Z",
+      "fetchedAt": "2026-11-17T08:54:03.577Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -976,7 +976,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:44:31.905Z",
+      "fetchedAt": "2026-11-17T08:54:05.494Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
@@ -990,7 +990,7 @@
         ]
       },
       "error": null,
-      "textLength": 1769
+      "textLength": 1643
     },
     {
       "id": "study_portals",
@@ -1003,7 +1003,7 @@
       ],
       "ok": true,
       "method": "http",
-      "fetchedAt": "2026-11-16T07:44:32.984Z",
+      "fetchedAt": "2026-11-17T08:54:06.569Z",
       "status": 200,
       "signals": {
         "mentions_29000": false,
